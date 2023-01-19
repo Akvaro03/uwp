@@ -10262,11 +10262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Consultar SRL\\Desktop\\Nueva carpeta\\uwpIntentoNuevo\\uwpIntentoNuevo.csproj",
+      "projectUniqueName": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
       "projectName": "uwpIntentoNuevo",
-      "projectPath": "C:\\Users\\Consultar SRL\\Desktop\\Nueva carpeta\\uwpIntentoNuevo\\uwpIntentoNuevo.csproj",
+      "projectPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
       "packagesPath": "C:\\Users\\Consultar SRL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Consultar SRL\\Desktop\\Nueva carpeta\\uwpIntentoNuevo\\obj\\",
+      "outputPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

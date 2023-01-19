@@ -26,5 +26,10 @@ namespace uwpIntentoNuevo.view
         {
             this.InitializeComponent();
         }
+        private void NavigationButtonToBack(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(MainPage));
+        }
+
     }
 }

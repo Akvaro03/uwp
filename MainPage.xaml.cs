@@ -37,5 +37,10 @@ namespace uwpIntentoNuevo
             frame.Navigate(typeof(Config));
         }
 
+        private void NavigationButtonEnsayo(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(Ensayos));
+        }
+
     }
 }

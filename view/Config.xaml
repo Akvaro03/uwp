@@ -7,31 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Frame x:Name="frame">
+        <Grid   VerticalAlignment="Center" Height="800" Width="1488">
+            <StackPanel Background="#1c212a">
 
-    <Grid    x:Name="frame" VerticalAlignment="Center" Height="800" Width="1488">
-        <StackPanel Background="#1c212a">
+                <Grid VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
 
-            <Grid VerticalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Text="Nombre de la empresa"
+                    <TextBlock Text="Nombre de la empresa"
                        Grid.Column="1"
                        Foreground="#fff"
                        FontSize="18"
                        HorizontalAlignment="Left" Margin="12,274,0,-298" Grid.Row="2"
                        />
-                <TextBox  Grid.Column="1"
+                    <TextBox  Grid.Column="1"
                        Margin="12,298,285,-335"
                        PlaceholderText="Nombre de su empresa"
                        Grid.Row="2"
@@ -39,7 +39,7 @@
                        Grid.ColumnSpan="4"
                        Text="{Binding ClientName}"></TextBox >
 
-                <!--<Picker Title="SELECCIONAR TIPO DE ENSAYO" 
+                    <!--<Picker Title="SELECCIONAR TIPO DE ENSAYO" 
                         FontSize="18" TitleColor="#fff" 
                         Grid.Column="1" Grid.ColumnSpan="3" 
                         Grid.Row="3"
@@ -55,29 +55,31 @@
 
 
 
-            </Grid>
+                </Grid>
 
-            <Grid VerticalAlignment="Bottom" Margin="10,0,10,10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
+                <Grid VerticalAlignment="Bottom" Margin="10,0,10,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
 
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                    <ColumnDefinition Width="0.5*" />
-                </Grid.ColumnDefinitions>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
 
-                <Button Content="Volver al inicio"
+                    <Button Content="Volver al inicio"
                         Background="#8979F2" Foreground="#fff"
                         Command="{Binding GoToHome}"
                         FontSize="16"
                         Grid.Column="1"
+                        x:Name="btn1"
+                        Click="NavigationButtonToBack"
                         CornerRadius="5" Margin="0,551,0,0" VerticalAlignment="Top"
                         />
-                <Button Grid.Column="2"
+                    <Button Grid.Column="2"
                         FontSize="16"
                         Padding="0, 15"
                         Content="Guardar"
@@ -85,11 +87,13 @@
                         Background="#04D976"
                         CornerRadius="5"
                         Command="{Binding SaveConfig}" Margin="0,532,0,0" VerticalAlignment="Top" Height="74" Width="293" HorizontalAlignment="Center"/>
-                <TextBlock Text="Configuracion"
+                    <TextBlock Text="Configuracion"
                    Foreground="#fff" FontSize="18"
                 Grid.ColumnSpan="5" Margin="0,84,-20,498"
                 />
-            </Grid>
-        </StackPanel>
-    </Grid>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+    </Frame>
 </Page>

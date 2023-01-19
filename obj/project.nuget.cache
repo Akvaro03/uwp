@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CH9y8rPxG4G8Eur80U8UZT+F4xg28hlt6T7fAdoxZnXK17PML3oJ/vqiHrFJiQ17C4jbFYnP7SJx/ximHuUpbw==",
+  "dgSpecHash": "uNsti9oEes/HvlMTsr5TNCdbqIgKvEG1XPR9MG6N7cxSPPe0QY8Rd3xLEetsckRAa59yEM47wGD2NpdP09VDeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Consultar SRL\\Desktop\\Nueva carpeta\\uwpIntentoNuevo\\uwpIntentoNuevo.csproj",
+  "projectFilePath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
