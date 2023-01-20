@@ -1,0 +1,138 @@
+﻿<Page
+    x:Class="uwpIntentoNuevo.view.historial"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwpIntentoNuevo.view"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Frame x:Name="frame">
+        <Grid Background="#1c212a">
+            <Grid Margin="20, 15" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.2*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock 
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Text="Historial de Ensayos" Foreground="#fff"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="27" FontFamily="Italic" />
+            </Grid>
+            <Grid Margin="20 40 20 0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+
+
+                <TextBox  
+                    Margin="0,28,0,0" 
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    FontSize="18"
+                    PlaceholderText="Nombre del ensayo" 
+                    Text="{Binding NombreEnsayo}"
+                    />
+
+                <!--<Picker 
+                    Title="Resultado Ensayo" 
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontSize="18" TitleColor="#fff" 
+                    SelectedItem="{Binding EstadoEnsayo}"
+                    >
+                        <Picker.Items>
+                            <x:String>Todos</x:String>
+                            <x:String>PASA</x:String>
+                            <x:String>FALLA</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Picker 
+                    Title="Fecha" 
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    FontSize="18" TitleColor="#fff" 
+                    SelectedItem="{Binding FechaEnsayo}"
+                    >
+                        <Picker.Items>
+                            <x:String>Ascendente</x:String>
+                            <x:String>Descendente</x:String>
+                        </Picker.Items>
+                    </Picker>-->
+                <Button     
+                    Content="Buscar"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Background="#04D976"
+                    FontSize="16"
+                    Foreground="#fff"
+                    FontFamily="Bold"
+                    Margin="0,27,0,0"
+                    Command="{Binding Search}"
+                />
+            </Grid>
+            <ListView x:Name="EnsayosListView" Margin="20 20 20 0" ItemsSource="{Binding EnsayosList}" >
+                <ListView.Header>
+                    <Grid Background="#8979F2" Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"   Text="Fecha"/>
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"  Text="PAT" Grid.Column="1"/>
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center" Text="Valor PAT" Grid.Column="2"/>
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"  Text="CFP" Grid.Column="3" />
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center" Text="Valor CFP" Grid.Column="4"/>
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<ViewCell>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock FontSize="17" HorizontalTextAlignment="Center" Text="{Binding FechaEnsayo}"/>
+                                    <TextBlock FontSize="17" HorizontalTextAlignment="Center" Text="{Binding PAT}" Grid.Column="1"/>
+                                    <TextBlock FontSize="17" HorizontalTextAlignment="Center" Text="{Binding ValorPAT}" Grid.Column="2" />
+                                    <TextBlock FontSize="17" HorizontalTextAlignment="Center" Text="{Binding CFP}" Grid.Column="3"/>
+                                    <TextBlock FontSize="17" HorizontalTextAlignment="Center" Text="{Binding ValorCFP}" Grid.Column="4"/>
+                                </Grid>
+                            </ViewCell>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </Grid>
+    </Frame>
+</Page>

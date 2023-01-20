@@ -53,3 +53,8 @@ C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\Ensayos.g.cs
 C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\Ensayos.xaml
 C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\Ensayos.xbf
 C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\historial.g.i.cs
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\historial.g.cs
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\historial.xaml
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\view\historial.xbf

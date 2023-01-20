@@ -34,7 +34,7 @@ namespace uwpIntentoNuevo
 
         private void NavigationButton2(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(Config));
+            frame.Navigate(typeof(historial));
         }
 
         private void NavigationButtonEnsayo(object sender, RoutedEventArgs e)

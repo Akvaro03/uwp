@@ -7,88 +7,61 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Frame x:ConnectionId='2' x:Name="frame">
-        <StackPanel Background="#1c212a" HorizontalAlignment="Center">
-            <Grid Margin="10, 15">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                    <ColumnDefinition Width="0.2*" />
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Text="Consultar SRL" Foreground="#fff"
-                       HorizontalAlignment="Left"
-                       VerticalAlignment="Center"
+    <Frame x:ConnectionId='2' x:Name="frame"  Background="#1c212a">
+        <Grid>
+            
+            <!--Empresa-->
+            <TextBlock Text="Consultar SRL" Foreground="#fff"
+                       HorizontalAlignment="Left" 
+                       VerticalAlignment="Top" Margin="20"
                        FontSize="18" FontStyle="Italic" />
-            </Grid>
 
-            <Grid Margin="30,0" Height="937" VerticalAlignment="Center">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
+            <!--Cliente-->
+            <TextBlock Text="{Binding ClientName, FallbackValue='Consultar SRL'}" Grid.Column="7" HorizontalAlignment="Right" FontSize="16"
+                   Foreground="#11D990" FontWeight="Bold" VerticalAlignment="Bottom" Margin="30 20"/>
+
+            <!--Menu-->
+            <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='3'
-                        FontSize="24"
-                        Width="150"
-                        FontFamily="FAS"
-                        Background="#8979F2"
-                        CornerRadius="5"
-                        x:Name="btn1"
-                        Content="&#xf013;"
-                                                  Margin="0,185,0,0" VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Center"/>
-                <Button x:ConnectionId='4'
-                        VerticalAlignment="Top"  RenderTransformOrigin="0.408,1.019"
-                        FontSize="24"
-                        Width="150"
-                        FontFamily="FAS"
-                        Background="#8979F2"
-                        CornerRadius="5"
-                        Content="&#xF013;"
-                        x:Name="btn2"
-                                                  Margin="0,185,0,0" HorizontalAlignment="Center"/>
                 
+                <Button x:ConnectionId='3' 
+                        FontSize="24"
+                        Width="150"
+                        Background="#8979F2"
+                        CornerRadius="5"
+                        x:Name="btn1" Margin="0 300 0 0"
+                        Content="Configuracion"
+                                                   VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Center"/>
+
+                <Button x:ConnectionId='4' 
+                        VerticalAlignment="Top"  Margin="0 300 0 0"
+                        FontSize="24"
+                        Width="150"
+                        FontFamily="FAS"
+                        Background="#8979F2"
+                        CornerRadius="5"
+                        Content="Historial"
+                        x:Name="btn2"
+                                                  HorizontalAlignment="Center"/>
+
                 <Button x:ConnectionId='5' Content="Ensayos"
                         Background="#04D976"
                         Padding="0,20"
-                        FontSize="18"
+                        FontSize="50"
                         FontWeight="Bold"
                         CornerRadius="5"
                         x:Name="btn3"
                                                       
-                        VerticalAlignment="Top" Margin="421,469,0,0" Width="571" Height="101" Grid.ColumnSpan="3"  />
-
-            </Grid>
-            <Grid Width="1459" Height="514">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="{Binding ClientName}" Grid.Column="7" HorizontalAlignment="Right" FontSize="16"
-                   Foreground="#11D990" FontWeight="Bold" VerticalAlignment="Center"/>
+                        VerticalAlignment="Bottom" Margin="0 0 0 200" HorizontalAlignment="Center" Width="571" Height="101" Grid.ColumnSpan="3"  />
 
             </Grid>
 
-        </StackPanel>
-
+        </Grid>
+        
     </Frame>
 </Page>
 

@@ -129,6 +129,9 @@
     <Compile Include="view\Ensayos.xaml.cs">
       <DependentUpon>Ensayos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="view\historial.xaml.cs">
+      <DependentUpon>historial.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -159,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="view\Ensayos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view\historial.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
