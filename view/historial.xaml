@@ -10,6 +10,7 @@
 
     <Frame x:Name="frame">
         <Grid Background="#1c212a">
+            <!--Titulo-->
             <Grid Margin="20, 15" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
@@ -27,7 +28,8 @@
                     VerticalAlignment="Center"
                     FontSize="27" FontFamily="Italic" />
             </Grid>
-            <Grid Margin="20 40 20 0" >
+            <!--Filtro-->
+            <Grid Margin="20 40 20 0" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
@@ -42,7 +44,7 @@
 
 
                 <TextBox  
-                    Margin="0,28,0,0" 
+                    Margin="10" 
                     Grid.Column="0"
                     Grid.Row="0"
                     FontSize="18"
@@ -50,31 +52,26 @@
                     Text="{Binding NombreEnsayo}"
                     />
 
-                <!--<Picker 
-                    Title="Resultado Ensayo" 
+                <ComboBox IsEditable="True"                     Grid.Column="1"
+                    Grid.Row="0"                    Margin="10" 
+
+
+                       FontSize="18" Height="60" Width="330" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
+                    <ComboBoxItem Content="Tipo 1"/>
+                    <ComboBoxItem Content="Tipo 2"/>
+                    <ComboBoxItem Content="Tipo 3"/>
+                </ComboBox>
+
+                <ComboBox IsEditable="True"
+                          Margin="10"
+                          Grid.Column="2"
                     Grid.Row="0"
-                    Grid.Column="1"
-                    FontSize="18" TitleColor="#fff" 
-                    SelectedItem="{Binding EstadoEnsayo}"
-                    >
-                        <Picker.Items>
-                            <x:String>Todos</x:String>
-                            <x:String>PASA</x:String>
-                            <x:String>FALLA</x:String>
-                        </Picker.Items>
-                    </Picker>
-                    <Picker 
-                    Title="Fecha" 
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    FontSize="18" TitleColor="#fff" 
-                    SelectedItem="{Binding FechaEnsayo}"
-                    >
-                        <Picker.Items>
-                            <x:String>Ascendente</x:String>
-                            <x:String>Descendente</x:String>
-                        </Picker.Items>
-                    </Picker>-->
+                       FontSize="18" Height="60" Width="330" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
+                    <ComboBoxItem Content="Tipo 1"/>
+                    <ComboBoxItem Content="Tipo 2"/>
+                    <ComboBoxItem Content="Tipo 3"/>
+                </ComboBox>
+
                 <Button     
                     Content="Buscar"
                     Grid.Row="0"
@@ -83,11 +80,12 @@
                     FontSize="16"
                     Foreground="#fff"
                     FontFamily="Bold"
-                    Margin="0,27,0,0"
-                    Command="{Binding Search}"
+                    Padding="75,15"
+                    Command="{Binding Search}" VerticalAlignment="Center" HorizontalAlignment="Center"
                 />
             </Grid>
-            <ListView x:Name="EnsayosListView" Margin="20 20 20 0" ItemsSource="{Binding EnsayosList}" >
+            <!--Categorias-->
+            <ListView x:Name="EnsayosListView" Margin="20 130 20 0" ItemsSource="{Binding EnsayosList}" >
                 <ListView.Header>
                     <Grid Background="#8979F2" Padding="10">
                         <Grid.RowDefinitions>
@@ -101,12 +99,13 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"   Text="Fecha"/>
-                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"  Text="PAT" Grid.Column="1"/>
+                        <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"  Text="PAT" Grid.Column="1" Grid.ColumnSpan="2" Height="21" Margin="10,10,278,0" VerticalAlignment="Top"/>
                         <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center" Text="Valor PAT" Grid.Column="2"/>
                         <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center"  Text="CFP" Grid.Column="3" />
                         <TextBlock FontSize="17" FontFamily="Bold" HorizontalTextAlignment="Center" Text="Valor CFP" Grid.Column="4"/>
                     </Grid>
                 </ListView.Header>
+                <!--Datos-->
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--<ViewCell>
