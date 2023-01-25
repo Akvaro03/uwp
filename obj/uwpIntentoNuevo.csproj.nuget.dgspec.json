@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {}
+    "C:\\Users\\Consultar SRL\\Downloads\\uwp-main\\uwpIntentoNuevo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {
+    "C:\\Users\\Consultar SRL\\Downloads\\uwp-main\\uwpIntentoNuevo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
+        "projectUniqueName": "C:\\Users\\Consultar SRL\\Downloads\\uwp-main\\uwpIntentoNuevo.csproj",
         "projectName": "uwpIntentoNuevo",
-        "projectPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
+        "projectPath": "C:\\Users\\Consultar SRL\\Downloads\\uwp-main\\uwpIntentoNuevo.csproj",
         "packagesPath": "C:\\Users\\Consultar SRL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\obj\\",
+        "outputPath": "C:\\Users\\Consultar SRL\\Downloads\\uwp-main\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -43,9 +43,9 @@
               "target": "Package",
               "version": "[6.2.14, )"
             },
-            "MySql.Data": {
+            "MySqlConnector": {
               "target": "Package",
-              "version": "[8.0.32, )"
+              "version": "[2.2.5, )"
             },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",

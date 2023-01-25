@@ -9,7 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
 
 
-xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
     >
     <Frame x:Name="frame">
         <Grid   VerticalAlignment="Center" Height="800" Width="1488">

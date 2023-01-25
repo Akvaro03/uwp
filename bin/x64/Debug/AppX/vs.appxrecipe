@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>822edb87-be27-4994-b35e-eb2a72c8a8e5</PackageIdentityName>
     <PackageIdentityPublisher>CN=Consultar SRL</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Consultar SRL\Downloads\uwp-main\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D14C7220B9A66161D99AC2B09A36A8C94C4115513D2664D8B534FAFBBE063B39</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>B162F1B14ADB2DDC37DD5D0EB312D3DBFC40618C1EE0172FE29FD00EC9A56E6F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.0.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>822edb87-be27-4994-b35e-eb2a72c8a8e5_4bjjn4d1bp97j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>822edb87-be27-4994-b35e-eb2a72c8a8e5</RegisteredPackageID>
@@ -27,16 +27,20 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T13:39:36.336</Modified>
+      <Modified>2023-01-25T15:23:06.142</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-01-24T13:39:34.848</Modified>
+      <Modified>2023-01-25T15:23:03.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
+      <PackagePath>MySqlConnector.dll</PackagePath>
+      <Modified>2023-01-01T21:31:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -61,6 +65,14 @@
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.dll">
       <PackagePath>Syncfusion.SfComboBox.XForms.dll</PackagePath>
       <Modified>2023-01-17T09:10:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.diagnostics.diagnosticsource\6.0.0\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+      <Modified>2021-10-22T23:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2021-10-22T23:40:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -110,67 +122,67 @@
       <PackagePath>Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png</PackagePath>
       <Modified>2023-01-17T07:37:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2023-01-19T10:49:23.047</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-12-07T13:16:03.619</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-12-07T13:16:03.634</Modified>
+      <Modified>2023-01-24T15:52:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-      <Modified>2023-01-24T13:39:34.711</Modified>
+      <Modified>2023-01-25T14:05:41.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-01-24T13:39:34.741</Modified>
+      <Modified>2023-01-25T15:23:03.561</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-01-24T13:39:34.741</Modified>
+      <Modified>2023-01-25T15:23:03.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-01-24T13:39:34.741</Modified>
+      <Modified>2023-01-25T15:23:03.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-01-24T13:39:34.741</Modified>
+      <Modified>2023-01-25T15:23:03.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-01-24T13:39:34.741</Modified>
+      <Modified>2023-01-25T15:23:03.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -184,13 +196,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-10T00:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-01-24T13:35:14.414</Modified>
+      <Modified>2023-01-25T15:23:04.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-01-24T13:39:36.332</Modified>
+      <Modified>2023-01-25T15:23:06.138</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
