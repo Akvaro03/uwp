@@ -13,19 +13,28 @@ namespace uwpIntentoNuevo.DB
 
         string stringConeccion = "server=localhost;port=3306;database=isometer;uid=root;password=";
 
-        public MySqlConnection establecerConeccion()
+        public string getData()
         {
             try
             {
                 connection.ConnectionString = stringConeccion;
                 connection.Open();
+
+
+                var command = new MySqlCommand("SELECT * FROM Ensayos;", connection);
+                var reader = command.ExecuteReader();
+                reader.Read();
+                var datos = reader.GetString("EstadoEnsayo");
+
+                return datos;
             }
             catch (MySqlException)
             {
                 //MessageBox.Show(e.Message);
+                return "no";
             }
-            return connection;
-        }
 
+        }
     }
 }
+

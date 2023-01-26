@@ -172,3 +172,8 @@ C:\Users\Consultar SRL\Downloads\uwp-main\obj\x64\Debug\.winmd_cache\$Microsoft.
 C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\MySqlConnector.dll
 C:\Users\Consultar SRL\Downloads\uwp-main\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Consultar SRL\Downloads\uwp-main\obj\x64\Debug\FxResources.System.Diagnostics.DiagnosticSource.SR.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MySqlConnector.dll
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\resources.en-us.resfiles
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\resources.en-us.resfiles.intermediate

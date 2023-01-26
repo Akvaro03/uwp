@@ -29,14 +29,7 @@ namespace uwpIntentoNuevo
         }
         private void NavigationButton1(object sender, RoutedEventArgs e)
         {
-
-            DB.coneccion coneccion = new DB.coneccion();
-
-            coneccion.establecerConeccion();
-
             frame.Navigate(typeof(Config));
-
-
         }
 
         private void NavigationButton2(object sender, RoutedEventArgs e)

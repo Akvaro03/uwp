@@ -22,9 +22,15 @@ namespace uwpIntentoNuevo.view
     /// </summary>
     public sealed partial class historial : Page
     {
+        DB.coneccion coneccion;
         public historial()
         {
             this.InitializeComponent();
+
+            coneccion = new DB.coneccion();
+            var data = coneccion.getData();
         }
+
+
     }
 }
