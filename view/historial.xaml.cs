@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpIntentoNuevo.DB;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -23,12 +24,18 @@ namespace uwpIntentoNuevo.view
     public sealed partial class historial : Page
     {
         DB.coneccion coneccion;
+
+        EnsayosDBModel[] Prueba = new EnsayosDBModel[10];
         public historial()
         {
             this.InitializeComponent();
 
+            
+
             coneccion = new DB.coneccion();
             var data = coneccion.getData();
+
+            DataContext= data;
         }
 
 
