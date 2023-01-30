@@ -120,7 +120,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DB\coneccion.cs" />
-    <Compile Include="DB\EnsayosDBModel.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -131,6 +130,7 @@
     <Compile Include="view\Ensayos.xaml.cs">
       <DependentUpon>Ensayos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DB\EnsayosDBModel.cs" />
     <Compile Include="view\historial.xaml.cs">
       <DependentUpon>historial.xaml</DependentUpon>
     </Compile>

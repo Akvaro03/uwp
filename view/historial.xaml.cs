@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,17 +26,20 @@ namespace uwpIntentoNuevo.view
     {
         DB.coneccion coneccion;
 
-        EnsayosDBModel[] Prueba = new EnsayosDBModel[10];
+        public Collection<EnsayosDBModel> ensayos { get; set; }
+
+        public string NombreBuscador { get; set; }
+
         public historial()
         {
             this.InitializeComponent();
 
-            
-
+            this.NombreBuscador = "hola";
             coneccion = new DB.coneccion();
-            var data = coneccion.getData();
 
-            DataContext= data;
+            ensayos = coneccion.getData();
+
+            this.DataContext  = this;
         }
 
 

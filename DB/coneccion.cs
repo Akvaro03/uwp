@@ -14,11 +14,11 @@ namespace uwpIntentoNuevo.DB
 
         string stringConeccion = "server=localhost;port=3306;database=isometer;uid=root;password=";
 
-        public Collection<EnsayosDBModel[]> getData()
+        public Collection<EnsayosDBModel> getData()
         {
             try
             {
-                Collection<EnsayosDBModel[]> values = new Collection<EnsayosDBModel[]>();
+                Collection<EnsayosDBModel> values = new Collection<EnsayosDBModel>();
                 connection.ConnectionString = stringConeccion;
                 connection.Open();
 
@@ -37,20 +37,17 @@ namespace uwpIntentoNuevo.DB
                     todo.Add(buffer); 
                 }
 
-                values = todo.Select(o => new EnsayosDBModel[o]);
 
-                //while (reader.Read())
-                //{
-                //    object[] objeto = new object[6];
-                //    int fieldCount = reader.GetValues(objeto);
-                //    values.Add(new EnsayosDBModel(objeto));
-                //}
+                foreach(object[] item in todo )
+                {
+                    values.Add(new EnsayosDBModel(item));
+                }
+
 
                 return values;
             }
             catch (MySqlException)
             {
-                //MessageBox.Show(e.Message);
                 return null ;
             }
 

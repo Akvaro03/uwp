@@ -7,9 +7,7 @@
     <RootPropertyPathName Name="IsPATChecked" />
     <RootPropertyPathName Name="Ensayar" />
     <RootPropertyPathName Name="IsFugaChecked" />
-    <RootPropertyPathName Name="data" />
-    <RootPropertyPathName Name="Search" />
-    <RootPropertyPathName Name="NombreEnsayo" />
+    <RootPropertyPathName Name="NombreBuscador" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -119,10 +117,10 @@
       <RootProperty Name="Header" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="uwpIntentoNuevo.view.historial" />
   </Roots.RootTypes>
 </Roots>

@@ -8,21 +8,28 @@ namespace uwpIntentoNuevo.DB
 {
     public class EnsayosDBModel
     {
-        public EnsayosDBModel()
-        {
-
-        }
-
-        public EnsayosDBModel(object[] args):this()
-        {
-            //
-        }
 
         public string NombreEnsayo { get; set; }
-        public float ValorEnsayo { get; set; }
+        public Double ValorEnsayo { get; set; }
         public int id { get; set; }
         public string EstadoEnsayo { get; set; }
         public DateTime FechaEnsayo { get; set; }
         public string VerificacionKey { get; set; }
+        public EnsayosDBModel()
+        {
+        }
+
+        public EnsayosDBModel(object[] args) : this()
+        {
+            this.NombreEnsayo = (string)args.ElementAt(0);
+            this.ValorEnsayo = (Double)args.ElementAt(3);
+            this.id = (int)args.ElementAt(4);
+            this.EstadoEnsayo = (string)args.ElementAt(1);
+            this.VerificacionKey = (string)args.ElementAt(5);
+            this.FechaEnsayo = (DateTime)args.ElementAt(2);
+        }
+
     }
+
+
 }
