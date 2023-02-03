@@ -73,13 +73,13 @@
 
                     <Button Content="Volver al inicio"
                         Background="#8979F2" Foreground="#fff"
-                        Command="{Binding GoToHome}"
                         FontSize="16"
                         Grid.Column="1"
                         x:Name="btn1"
-                        Click="NavigationButtonToBack"
+                        Click="NavigationHome"
                         CornerRadius="5" Margin="0,551,0,0" VerticalAlignment="Top"
                         />
+                    
                     <Button Grid.Column="2"
                         FontSize="16"
                         Padding="0, 15"
@@ -96,7 +96,7 @@
                        Grid.Column="1"
                        Foreground="#fff"
                        FontSize="18"
-                       HorizontalAlignment="Left" Margin="10,344,0,-368" SelectionChanged="TextBlock_SelectionChanged_1"
+                       HorizontalAlignment="Left" Margin="10,344,0,238"  SelectionChanged="TextBlock_SelectionChanged_1"
                        />
 
                     <ComboBox IsEditable="True" Grid.Column="1"

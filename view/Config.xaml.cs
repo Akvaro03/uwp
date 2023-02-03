@@ -28,7 +28,7 @@ namespace uwpIntentoNuevo.view
             this.InitializeComponent();
             //cmbColors.ItemsSource = typeof(Colors).GetProperties();
         }
-        private void NavigationButtonToBack(object sender, RoutedEventArgs e)
+        public void NavigationHome(object sender, RoutedEventArgs e)
         {
             frame.Navigate(typeof(MainPage));
         }

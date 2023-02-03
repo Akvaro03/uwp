@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using uwpIntentoNuevo.DB;
 using Windows.Foundation;
@@ -40,6 +41,11 @@ namespace uwpIntentoNuevo.view
             ensayos = coneccion.getData();
 
             this.DataContext  = this;
+        }
+
+        public void NavigationHome(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(MainPage));
         }
 
 
