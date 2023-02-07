@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I4FpwbOAnvfL5esNiKIMCVk93uVCiR/FQznl9OcMWXdYKbf00VFWwMct/xsCdoOLUiWMEf5mYHRyCZYSgdzcNQ==",
+  "dgSpecHash": "qQLC3jbc88X7fDOr3WvD13lfm7ZDPHKrH2datUzeBDLEXHChwB5BKLPPzkzaoWzRxOkpvBSBfHpruF+m15Tpzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,10 @@
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.2.14\\microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\microsoft.ui.xaml\\2.4.3\\microsoft.ui.xaml.2.4.3.nupkg.sha512",
+    "C:\\Users\\Consultar SRL\\.nuget\\packages\\microsoft.windows.winmd\\1.0.210629.2\\microsoft.windows.winmd.1.0.210629.2.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Consultar SRL\\.nuget\\packages\\plugin.bluetoothle\\6.3.0.19\\plugin.bluetoothle.6.3.0.19.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.12-rel-31116-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",
@@ -35,7 +37,9 @@
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.reactive\\4.1.5\\system.reactive.4.1.5.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.runtime.windowsruntime\\5.0.0-preview.5.20278.1\\system.runtime.windowsruntime.5.0.0-preview.5.20278.1.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\Consultar SRL\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"

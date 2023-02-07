@@ -1,1 +1,1 @@
-C:\Users\Consultar SRL\Desktop\Nueva carpeta\uwpIntentoNuevo\uwpIntentoNuevo.csproj;x86
+C:\Users\Consultar SRL\Documents\GitHub\uwp\uwpIntentoNuevo.csproj;x86

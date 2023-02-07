@@ -177,3 +177,14 @@ C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\System.Diagnostics.Dia
 C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\resources.en-us.resfiles
 C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\resources.en-us.resfiles.intermediate
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Plugin.BluetoothLE.dll
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Plugin.BluetoothLE.pdb
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\System.Reactive.dll
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\Plugin.BluetoothLE.pri.xml
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive.pri.xml
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive\en-US\System.Reactive.Strings_Core.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive\en-US\System.Reactive.Strings_Linq.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive\en-US\System.Reactive.Strings_PlatformServices.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive\en-US\System.Reactive.Strings_Providers.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\System.Reactive\en-US\System.Reactive.Platforms.Windows.Strings_WindowsThreading.resw
+C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\ForBundle\AppxManifest.xml

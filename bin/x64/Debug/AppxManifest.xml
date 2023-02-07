@@ -7,7 +7,7 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="822edb87-be27-4994-b35e-eb2a72c8a8e5" Publisher="CN=Consultar SRL" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="822edb87-be27-4994-b35e-eb2a72c8a8e5" Publisher="CN=Consultar SRL" Version="1.0.8.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="822edb87-be27-4994-b35e-eb2a72c8a8e5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>uwpIntentoNuevo</DisplayName>

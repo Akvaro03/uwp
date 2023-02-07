@@ -19,28 +19,32 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B162F1B14ADB2DDC37DD5D0EB312D3DBFC40618C1EE0172FE29FD00EC9A56E6F</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.0.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>99CC6642588CAF1082B40EE63FF952347494EA4FE2D86427EB5F55F75DC8A97A</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.7.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>822edb87-be27-4994-b35e-eb2a72c8a8e5_4bjjn4d1bp97j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>822edb87-be27-4994-b35e-eb2a72c8a8e5</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Consultar SRL</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.7.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-03T16:52:12.269</Modified>
+      <Modified>2023-02-07T14:37:10.769</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-03T16:52:10.146</Modified>
+      <Modified>2023-02-07T14:37:08.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
       <Modified>2023-01-01T21:31:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\plugin.bluetoothle\6.3.0.19\lib\uap10.0.16299\Plugin.BluetoothLE.dll">
+      <PackagePath>Plugin.BluetoothLE.dll</PackagePath>
+      <Modified>2020-03-30T11:53:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -69,6 +73,10 @@
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.diagnostics.diagnosticsource\6.0.0\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2021-10-22T23:45:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.reactive\4.1.5\lib\uap10.0.16299\System.Reactive.dll">
+      <PackagePath>System.Reactive.dll</PackagePath>
+      <Modified>2019-04-10T12:16:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
@@ -162,27 +170,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-      <Modified>2023-02-03T16:52:09.970</Modified>
+      <Modified>2023-02-07T11:56:51.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-07T14:37:08.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-07T14:37:08.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-07T14:37:08.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.018</Modified>
+      <Modified>2023-02-07T14:37:08.800</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.018</Modified>
+      <Modified>2023-02-07T14:37:08.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -198,11 +206,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-01-30T15:27:47.398</Modified>
+      <Modified>2023-02-07T14:22:11.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-03T16:52:12.259</Modified>
+      <Modified>2023-02-07T14:37:10.761</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

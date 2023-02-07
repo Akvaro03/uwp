@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo_1.0.8.0_x64_Debug.msix
+SymbolPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\Symbols\uwpIntentoNuevo_1.0.8.0_x64_Debug.appxsym

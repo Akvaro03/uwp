@@ -31,6 +31,9 @@
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\plugin.bluetoothle\6.3.0.19\lib\uap10.0.16299\Plugin.BluetoothLE.dll">
+      <PackagePath>Plugin.BluetoothLE.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
@@ -51,6 +54,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.diagnostics.diagnosticsource\6.0.0\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.reactive\4.1.5\lib\uap10.0.16299\System.Reactive.dll">
+      <PackagePath>System.Reactive.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
@@ -123,21 +129,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
-      <PackagePath>view\Config.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
-      <PackagePath>view\Ensayos.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
-      <PackagePath>view\historial.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>

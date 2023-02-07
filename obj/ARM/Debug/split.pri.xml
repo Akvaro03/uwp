@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="822edb87-be27-4994-b35e-eb2a72c8a8e5" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="uwpIntentoNuevo.xr.xml" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/uwpIntentoNuevo.xr.xml">
+				<Candidate type="Path">
+					<Value>uwpIntentoNuevo.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.UI.Xaml">
+				<ResourceMapSubtree name="DensityStyles">
+					<NamedResource name="Compact.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Microsoft.UI.Xaml/DensityStyles/Compact.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.Core.XForms.UWP">
+				<NamedResource name="Syncfusion.Core.XForms.UWP.xr.xml" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="TILRenderer">
+					<ResourceMapSubtree name="ToggleIcons">
+						<NamedResource name="ClearButtonViewVisibleIcon.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ClearButtonViewVisibleIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DropDownIcon.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleCollapsedIcon.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToggleVisibleIcon.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.SfComboBox.XForms.UWP">
+				<NamedResource name="darkthemeimage.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.SfComboBox.XForms.UWP/darkthemeimage.png">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfComboBox.XForms.UWP\darkthemeimage.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="dropdownbuttonimage.png" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Syncfusion.SfComboBox.XForms.UWP.xr.xml" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.SfComboBox.XForms.UWP/Syncfusion.SfComboBox.XForms.UWP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Syncfusion.SfComboBox.XForms.UWP/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="view">
+				<NamedResource name="Config.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/view/Config.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Ensayos.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/view/Ensayos.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="historial.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/view/historial.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Xamarin.Forms.Platform.UAP">
+				<NamedResource name="FlyoutPageControlStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FlyoutPageControlStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsAutoSuggestBoxStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsCheckBoxStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsCommandBarStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsEmbeddedPageWrapper.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsFlyout.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsProgressBarStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsTextBoxStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MasterDetailControlStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PageControlStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PickerStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/PickerStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PromptDialog.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/PromptDialog.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Resources.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/Resources.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SliderStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/SliderStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StepperControl.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/StepperControl.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TabbedPageStyle.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Xamarin.Forms.Platform.UAP.xr.xml" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="CollectionView">
+					<NamedResource name="ItemsViewStyles.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Shell">
+					<NamedResource name="ShellPageWrapper.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ShellStyles.xbf" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/Files/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="FxResources.System.Diagnostics.DiagnosticSource.SR">
+			<NamedResource name="ActivityIdFormatInvalid" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ActivityIdFormatInvalid">
+				<Candidate type="String">
+					<Value>"Value must be a valid ActivityIdFormat value"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ActivityNotRunning" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ActivityNotRunning">
+				<Candidate type="String">
+					<Value>Trying to set an Activity that is not running</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ActivityNotStarted" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ActivityNotStarted">
+				<Candidate type="String">
+					<Value>"Can not stop an Activity that was not started"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ActivityStartAlreadyStarted" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ActivityStartAlreadyStarted">
+				<Candidate type="String">
+					<Value>"Can not start an Activity that was already started"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Arg_BufferTooSmall" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/Arg_BufferTooSmall">
+				<Candidate type="String">
+					<Value>Destination buffer is not long enough to copy all the items in the list.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EndTimeNotUtc" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/EndTimeNotUtc">
+				<Candidate type="String">
+					<Value>"EndTime is not UTC"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidTraceParent" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/InvalidTraceParent">
+				<Candidate type="String">
+					<Value>"Invalid trace parent."</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="KeyAlreadyExist" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/KeyAlreadyExist">
+				<Candidate type="String">
+					<Value>"The collection already contains item with same key '{0}''"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OperationNameInvalid" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/OperationNameInvalid">
+				<Candidate type="String">
+					<Value>"OperationName must not be null or empty"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ParentIdAlreadySet" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ParentIdAlreadySet">
+				<Candidate type="String">
+					<Value>"ParentId is already set"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ParentIdInvalid" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/ParentIdInvalid">
+				<Candidate type="String">
+					<Value>"ParentId must not be null or empty"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SetFormatOnStartedActivity" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/SetFormatOnStartedActivity">
+				<Candidate type="String">
+					<Value>"Can not change format for an activity that was already started"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SetLinkInvalid" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/SetLinkInvalid">
+				<Candidate type="String">
+					<Value>"Can not add link to activity after it has been started"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SetParentIdOnActivityWithParent" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/SetParentIdOnActivityWithParent">
+				<Candidate type="String">
+					<Value>"Can not set ParentId on activity which has parent"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StartTimeNotUtc" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/StartTimeNotUtc">
+				<Candidate type="String">
+					<Value>"StartTime is not UTC"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnableAccessServicePointTable" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/UnableAccessServicePointTable">
+				<Candidate type="String">
+					<Value>Unable to access the ServicePointTable field</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnableToInitialize" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/UnableToInitialize">
+				<Candidate type="String">
+					<Value>Unable to initialize all required reflection objects</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnsupportedType" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/FxResources.System.Diagnostics.DiagnosticSource.SR/UnsupportedType">
+				<Candidate type="String">
+					<Value>{0} is unsupported type for this operation. The only supported types are byte, short, int, long, float, double, and decimal.  </Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Platforms.Windows.Strings_WindowsThreading">
+			<NamedResource name="NO_DISPATCHER_CURRENT_THREAD" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Platforms.Windows.Strings_WindowsThreading/NO_DISPATCHER_CURRENT_THREAD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The current thread has no Dispatcher associated with it.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_WINDOW_CURRENT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Platforms.Windows.Strings_WindowsThreading/NO_WINDOW_CURRENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No current Window object found to obtain a CoreDispatcher from.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_Core">
+			<NamedResource name="CANT_OBTAIN_SCHEDULER" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/CANT_OBTAIN_SCHEDULER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Using the Scheduler.{0} property is no longer supported due to refactoring of the API surface and elimination of platform-specific dependencies. Please include System.Reactive.PlatformServices for your target platform and use the {0}Scheduler type instead. If you're building a Windows Store app, notice some schedulers are no longer supported. Consider using Scheduler.Default instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COMPLETED_NO_VALUE" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/COMPLETED_NO_VALUE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>OnCompleted notification doesn't have a value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DISPOSABLES_CANT_CONTAIN_NULL" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/DISPOSABLES_CANT_CONTAIN_NULL">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Disposables collection can not contain null values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DISPOSABLE_ALREADY_ASSIGNED" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/DISPOSABLE_ALREADY_ASSIGNED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Disposable has already been assigned.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FAILED_CLOCK_MONITORING" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/FAILED_CLOCK_MONITORING">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to start monitoring system clock changes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HEAP_EMPTY" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/HEAP_EMPTY">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Heap is empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OBSERVER_TERMINATED" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/OBSERVER_TERMINATED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Observer has already terminated.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="REENTRANCY_DETECTED" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/REENTRANCY_DETECTED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Reentrancy has been detected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SCHEDULER_OPERATION_ALREADY_AWAITED" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Core/SCHEDULER_OPERATION_ALREADY_AWAITED">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This scheduler operation has already been awaited.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_Linq">
+			<NamedResource name="CANT_ADVANCE_WHILE_RUNNING" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/CANT_ADVANCE_WHILE_RUNNING">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} cannot be called when the scheduler is already running. Try using Sleep instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COULD_NOT_FIND_INSTANCE_EVENT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/COULD_NOT_FIND_INSTANCE_EVENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find event '{0}' on object of type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="COULD_NOT_FIND_STATIC_EVENT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/COULD_NOT_FIND_STATIC_EVENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not find event '{0}' on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_ADD_METHOD_SHOULD_TAKE_ONE_PARAMETER" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_ADD_METHOD_SHOULD_TAKE_ONE_PARAMETER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Add method should take 1 parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_ARGS_NOT_ASSIGNABLE" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_ARGS_NOT_ASSIGNABLE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The second parameter of the event delegate must be assignable to '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MISSING_ADD_METHOD" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_MISSING_ADD_METHOD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Event is missing the add method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MISSING_REMOVE_METHOD" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_MISSING_REMOVE_METHOD">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Event is missing the remove method.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_MUST_RETURN_VOID" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_MUST_RETURN_VOID">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The event delegate must have a void return type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_PATTERN_REQUIRES_TWO_PARAMETERS" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_PATTERN_REQUIRES_TWO_PARAMETERS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The event delegate must have exactly two parameters.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_REMOVE_METHOD_SHOULD_TAKE_ONE_PARAMETER" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_REMOVE_METHOD_SHOULD_TAKE_ONE_PARAMETER">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Remove method should take 1 parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_SENDER_NOT_ASSIGNABLE" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_SENDER_NOT_ASSIGNABLE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The first parameter of the event delegate must be assignable to '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EVENT_WINRT_REMOVE_METHOD_SHOULD_TAKE_ERT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/EVENT_WINRT_REMOVE_METHOD_SHOULD_TAKE_ERT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Remove method of a WinRT event should take an EventRegistrationToken.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MORE_THAN_ONE_ELEMENT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/MORE_THAN_ONE_ELEMENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains more than one element.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MORE_THAN_ONE_MATCHING_ELEMENT" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/MORE_THAN_ONE_MATCHING_ELEMENT">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains more than one matching element.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_ELEMENTS" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/NO_ELEMENTS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains no elements.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_MATCHING_ELEMENTS" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Linq/NO_MATCHING_ELEMENTS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Sequence contains no matching element.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_PlatformServices">
+			<NamedResource name="WINRT_NO_SUB1MS_TIMERS" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_PlatformServices/WINRT_NO_SUB1MS_TIMERS">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The WinRT thread pool doesn't support creating periodic timers with a period below 1 millisecond.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="System.Reactive.Strings_Providers">
+			<NamedResource name="EXPECTED_TOQUERYABLE_METHODCALL" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Providers/EXPECTED_TOQUERYABLE_METHODCALL">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected Qbservable.ToQueryable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="INVALID_TREE_TYPE" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Providers/INVALID_TREE_TYPE">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid expression tree type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NO_MATCHING_METHOD_FOUND" uri="ms-resource://822edb87-be27-4994-b35e-eb2a72c8a8e5/System.Reactive.Strings_Providers/NO_MATCHING_METHOD_FOUND">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>There is no method '{0}' on type '{1}' that matches the specified arguments.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

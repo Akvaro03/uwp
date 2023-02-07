@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpIntentoNuevo.BT;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,8 +24,10 @@ namespace uwpIntentoNuevo.view
     /// </summary>
     public sealed partial class Ensayos : Page
     {
+        BtConnection btConnection;
         public Ensayos()
         {
+            btConnection = new BtConnection(frame);
             this.InitializeComponent();
         }
 
@@ -34,7 +38,19 @@ namespace uwpIntentoNuevo.view
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            btConnection.showData();
         }
+
+        private void NavigationHome(object sender, RoutedEventArgs e)
+        {
+
+            frame.Navigate(typeof(MainPage));
+        }
+
+        //private async void showData()
+        //{
+        //    var dialog = new MessageDialog("hi");
+        //    await dialog.ShowAsync();
+        //}
     }
 }
