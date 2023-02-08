@@ -1,2 +1,2 @@
-MainPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\ARM\Debug\uwpIntentoNuevo_1.0.8.0_ARM_Debug.msix
-SymbolPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\ARM\Debug\Symbols\uwpIntentoNuevo_1.0.8.0_ARM_Debug.appxsym
+MainPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\ARM\Debug\uwpIntentoNuevo_1.0.9.0_ARM_Debug.msix
+SymbolPackage=C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\ARM\Debug\Symbols\uwpIntentoNuevo_1.0.9.0_ARM_Debug.appxsym

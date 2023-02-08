@@ -9,7 +9,7 @@
   <Identity
     Name="822edb87-be27-4994-b35e-eb2a72c8a8e5"
     Publisher="CN=Consultar SRL"
-    Version="1.0.8.0" />
+    Version="1.0.9.0" />
 
   <mp:PhoneIdentity PhoneProductId="822edb87-be27-4994-b35e-eb2a72c8a8e5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
