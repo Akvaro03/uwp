@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {
+    "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
         "projectName": "uwpIntentoNuevo",
-        "projectPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
-        "packagesPath": "C:\\Users\\Consultar SRL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Consultar SRL\\Documents\\GitHub\\uwp\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Consultar SRL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

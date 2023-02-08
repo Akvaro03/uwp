@@ -5,12 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Enumeration;
+using Windows.UI.Popups;
 
 namespace uwpIntentoNuevo.BT
 {
     internal class BtConnection
     {
         static DeviceInformation Device = null;
+
+
 
         public DeviceInformation ShowDat()
         {
@@ -35,6 +38,9 @@ namespace uwpIntentoNuevo.BT
 
             // Start the watcher.
             deviceWatcher.Start();
+            while(true)
+            {
+            }
 
             //while (true)
             //{
@@ -66,8 +72,10 @@ namespace uwpIntentoNuevo.BT
 
         private void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation args)
         {
+            var name = args.Name;
             //throw new NotImplementedException();
-            Device = args;
+            if(args.Name == "Galaxy 32")
+                Device = args;
         }
     }
 }

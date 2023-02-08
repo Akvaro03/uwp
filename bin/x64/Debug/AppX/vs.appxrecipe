@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>ALVARO</Machine>
-    <WindowsUser>Consultar SRL</WindowsUser>
+    <Machine>DESKTOP-V6304O6</Machine>
+    <WindowsUser>Usuario</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>822edb87-be27-4994-b35e-eb2a72c8a8e5</PackageIdentityName>
     <PackageIdentityPublisher>CN=Consultar SRL</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Consultar SRL\Documents\GitHub\uwp\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>B162F1B14ADB2DDC37DD5D0EB312D3DBFC40618C1EE0172FE29FD00EC9A56E6F</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.0.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>822edb87-be27-4994-b35e-eb2a72c8a8e5_4bjjn4d1bp97j!App</RegisteredUserModeAppID>
@@ -27,18 +27,18 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-08T16:23:26.991</Modified>
+      <Modified>2023-02-08T17:28:21.221</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-08T16:23:25.161</Modified>
+      <Modified>2023-02-08T17:28:19.308</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
       <Modified>2023-01-01T21:31:18.000</Modified>
     </AppxPackagedFile>
@@ -46,55 +46,55 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2022-06-11T01:23:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.licensing\20.4.0.44\lib\uap10.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.licensing\20.4.0.44\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
       <Modified>2023-01-17T08:13:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
       <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
       <Modified>2023-01-17T08:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.dll">
       <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
       <Modified>2023-01-17T08:54:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP.dll">
       <PackagePath>Syncfusion.SfComboBox.XForms.UWP.dll</PackagePath>
       <Modified>2023-01-17T09:10:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.dll">
       <PackagePath>Syncfusion.SfComboBox.XForms.dll</PackagePath>
       <Modified>2023-01-17T09:10:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.diagnostics.diagnosticsource\6.0.0\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.diagnostics.diagnosticsource\6.0.0\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2021-10-22T23:45:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2021-10-22T23:40:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T02:58:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
       <Modified>2021-02-12T13:40:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
       <Modified>2021-02-12T13:39:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
       <Modified>2021-02-12T13:39:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2021-02-12T13:39:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2016-11-30T02:58:38.000</Modified>
     </AppxPackagedFile>
@@ -102,87 +102,87 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2020-12-02T07:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.core\20.4.0.44\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
       <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
       <Modified>2023-01-17T08:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml">
       <PackagePath>Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml</PackagePath>
       <Modified>2023-01-17T09:10:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\xamarin.forms\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2021-02-12T04:08:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\darkthemeimage.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\darkthemeimage.png">
       <PackagePath>Syncfusion.SfComboBox.XForms.UWP\darkthemeimage.png</PackagePath>
       <Modified>2023-01-17T07:37:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.xamarin.sfcombobox\20.4.0.44\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png">
       <PackagePath>Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png</PackagePath>
       <Modified>2023-01-17T07:37:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.633</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T15:52:21.000</Modified>
+      <Modified>2023-02-08T16:27:21.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-      <Modified>2023-02-08T16:18:03.656</Modified>
+      <Modified>2023-02-08T16:27:53.388</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-02-08T16:23:25.049</Modified>
+      <Modified>2023-02-08T17:28:19.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-02-08T16:23:25.049</Modified>
+      <Modified>2023-02-08T17:28:19.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-02-08T16:23:25.049</Modified>
+      <Modified>2023-02-08T17:28:19.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-02-08T16:23:25.050</Modified>
+      <Modified>2023-02-08T17:28:19.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-02-08T16:23:25.050</Modified>
+      <Modified>2023-02-08T17:28:19.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -192,62 +192,62 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T05:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-07-10T00:07:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-02-08T16:18:04.455</Modified>
+      <Modified>2023-02-08T16:30:47.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
+    <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-08T16:23:26.987</Modified>
+      <Modified>2023-02-08T17:28:21.194</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>Win32</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx">
       <Name>Microsoft.UI.Xaml.2.4</Name>
       <Version>2.42007.9001.0</Version>
       <Architecture>arm64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.4, MinVersion = 2.42007.9001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\Consultar SRL\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.4.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
