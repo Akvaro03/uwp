@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-03T16:52:12.269</Modified>
+      <Modified>2023-02-08T16:23:26.991</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-03T16:52:10.146</Modified>
+      <Modified>2023-02-08T16:23:25.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
@@ -162,27 +162,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-      <Modified>2023-02-03T16:52:09.970</Modified>
+      <Modified>2023-02-08T16:18:03.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-08T16:23:25.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-08T16:23:25.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.017</Modified>
+      <Modified>2023-02-08T16:23:25.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.018</Modified>
+      <Modified>2023-02-08T16:23:25.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-02-03T16:52:10.018</Modified>
+      <Modified>2023-02-08T16:23:25.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -198,11 +198,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-01-30T15:27:47.398</Modified>
+      <Modified>2023-02-08T16:18:04.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Consultar SRL\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-03T16:52:12.259</Modified>
+      <Modified>2023-02-08T16:23:26.987</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BT\BtConnection.cs" />
     <Compile Include="DB\coneccion.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -176,11 +177,17 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Windows.WinMD">
+      <Version>1.0.210629.2</Version>
+    </PackageReference>
     <PackageReference Include="MySqlConnector">
       <Version>2.2.5</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
       <Version>20.4.0.44</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.WindowsRuntime">
+      <Version>5.0.0-preview.5.20278.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />

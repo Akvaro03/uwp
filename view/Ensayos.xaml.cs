@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpIntentoNuevo.BT;
+using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,18 +24,21 @@ namespace uwpIntentoNuevo.view
     /// </summary>
     public sealed partial class Ensayos : Page
     {
+        private readonly BtConnection bt;
         public Ensayos()
         {
             this.InitializeComponent();
+            bt = new BtConnection();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
+        //private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        //{
 
-        }
+        //}
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DeviceInformation device = bt.ShowDat();
 
         }
     }
