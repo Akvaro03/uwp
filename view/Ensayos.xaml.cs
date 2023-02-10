@@ -38,8 +38,7 @@ namespace uwpIntentoNuevo.view
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var hola = "";
-            DeviceInformation device = bt.ShowDat();
+            bt.ShowDat();
 
         }
     }

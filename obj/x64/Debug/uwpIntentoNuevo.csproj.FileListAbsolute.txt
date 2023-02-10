@@ -267,3 +267,5 @@ C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\resources.en-us.resfiles.int
 C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
 C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424923200000000.json
+C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\InTheHand.Net.Bluetooth.dll
+C:\Users\Usuario\Documents\GitHub\uwp\obj\x64\Debug\InTheHand.Net.Bluetooth.pri.xml

@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\inthehand.net.bluetooth\4.0.33.1\lib\uap10.0.16299\InTheHand.Net.Bluetooth.dll">
+      <PackagePath>InTheHand.Net.Bluetooth.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
     </AppxPackagedFile>

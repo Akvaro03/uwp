@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WrbQ/DVU3fnTunkjq4T3O2O+aylqr+YpqPQThOoieCn8entdaTNArP0C9/jwbMWzpXTFdb928fTFwctdCntuxQ==",
+  "dgSpecHash": "adwrfpSkKgg27ema2vBSwq+2HOLIITr/AId5B8o0xNX3YBh07Ya36rotCrbH9prunP+h76pNHjywQ1cieEUGkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\uwp\\uwpIntentoNuevo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\inthehand.net.bluetooth\\4.0.33.1\\inthehand.net.bluetooth.4.0.33.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",

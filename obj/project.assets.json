@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17763": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -820,6 +833,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -1796,6 +1822,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -2773,6 +2812,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -3747,6 +3799,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -4723,6 +4788,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -5700,6 +5778,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -6676,6 +6767,19 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
+      "InTheHand.Net.Bluetooth/4.0.33.1": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        },
+        "runtime": {
+          "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll": {
+            "related": ".pri;.xml"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -7654,6 +7758,43 @@
     }
   },
   "libraries": {
+    "InTheHand.Net.Bluetooth/4.0.33.1": {
+      "sha512": "McT+e+BQzkc+OnQK7XC523KJZiWr3FHfn7Nxc0imKwYzv8FB1YkRpqpRoy2o52K/4FwrSca9uvU4/OL221IEWQ==",
+      "type": "package",
+      "path": "inthehand.net.bluetooth/4.0.33.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "32feet-package-icon.png",
+        "inthehand.net.bluetooth.4.0.33.1.nupkg.sha512",
+        "inthehand.net.bluetooth.nuspec",
+        "lib/monoandroid11.0/InTheHand.Net.Bluetooth.dll",
+        "lib/monoandroid11.0/InTheHand.Net.Bluetooth.xml",
+        "lib/monoandroid90/InTheHand.Net.Bluetooth.dll",
+        "lib/monoandroid90/InTheHand.Net.Bluetooth.xml",
+        "lib/net452/InTheHand.Net.Bluetooth.dll",
+        "lib/net452/InTheHand.Net.Bluetooth.xml",
+        "lib/net461/InTheHand.Net.Bluetooth.dll",
+        "lib/net461/InTheHand.Net.Bluetooth.xml",
+        "lib/net5.0-windows10.0.19041/InTheHand.Net.Bluetooth.dll",
+        "lib/net5.0-windows10.0.19041/InTheHand.Net.Bluetooth.xml",
+        "lib/net5.0-windows7.0/InTheHand.Net.Bluetooth.dll",
+        "lib/net5.0-windows7.0/InTheHand.Net.Bluetooth.xml",
+        "lib/net6.0-android31.0/InTheHand.Net.Bluetooth.dll",
+        "lib/net6.0-android31.0/InTheHand.Net.Bluetooth.xml",
+        "lib/net6.0-windows10.0.19041/InTheHand.Net.Bluetooth.dll",
+        "lib/net6.0-windows10.0.19041/InTheHand.Net.Bluetooth.xml",
+        "lib/net6.0-windows7.0/InTheHand.Net.Bluetooth.dll",
+        "lib/net6.0-windows7.0/InTheHand.Net.Bluetooth.xml",
+        "lib/netstandard2.0/InTheHand.Net.Bluetooth.dll",
+        "lib/netstandard2.0/InTheHand.Net.Bluetooth.xml",
+        "lib/uap10.0.16299/InTheHand.Net.Bluetooth.dll",
+        "lib/uap10.0.16299/InTheHand.Net.Bluetooth.pri",
+        "lib/uap10.0.16299/InTheHand.Net.Bluetooth.xml",
+        "lib/xamarinios10/InTheHand.Net.Bluetooth.dll",
+        "lib/xamarinios10/InTheHand.Net.Bluetooth.xml"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
       "sha512": "91INue1M3Zap/S6yaglXMEq1UvirknZmzwFZiP0fs3Su5MhWUEJoBJK3BsPsiImnII2NGhrYKrJd+QW7zfClyA==",
       "type": "package",
@@ -12742,6 +12883,7 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
+      "InTheHand.Net.Bluetooth >= 4.0.33.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.14",
       "Microsoft.Windows.WinMD >= 1.0.210629.2",
       "MySqlConnector >= 2.2.5",
@@ -12789,6 +12931,10 @@
     "frameworks": {
       "uap10.0.17763": {
         "dependencies": {
+          "InTheHand.Net.Bluetooth": {
+            "target": "Package",
+            "version": "[4.0.33.1, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.14, )"
