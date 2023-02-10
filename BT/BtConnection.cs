@@ -1,7 +1,10 @@
-﻿using InTheHand.Net.Sockets;
+﻿using InTheHand.Net;
+using InTheHand.Net.Bluetooth;
+using InTheHand.Net.Sockets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,12 +20,11 @@ namespace uwpIntentoNuevo.BT
     internal class BtConnection
     {
         public DeviceInformation Device = null;
-
+        private bool stop = true;
         BluetoothLEDevice connection;
-
+        private ulong address;
         private DeviceWatcher deviceWatcher;
-
-        public string HEART_RATE_SERVICE_ID = "180D";
+        private BluetoothClient bluetoothClient;
 
         public BtConnection()
         {
@@ -52,67 +54,106 @@ namespace uwpIntentoNuevo.BT
 
 
             deviceWatcher.Start();
+            //BluetoothClient intent = new BluetoothClient();
+            //intent.DiscoverDevicesInRangeTimeOut = TimeSpan.FromSeconds(5);
 
+            //IReadOnlyCollection<BluetoothDeviceInfo> devices = intent.DiscoverDevices(2);
 
-            while (true)
+            //foreach (BluetoothDeviceInfo item in devices)
+            //{
+            //    var i = item.DeviceAddress;
+            //}
+
+            while (stop)
             {
-                if(Device == null)
+                if (Device == null)
                 {
                 }
-                else if(Device.Name == "HC-06")
+                else if (Device.Name == "HC-06")
                 {
-                    Connect();
+                    ManageBL();
                     break;
                 }
             }
 
         }
 
-        public async void Connect()
+        public async void GetAddress()
         {
             connection = await BluetoothLEDevice.FromIdAsync(Device.Id);
-            var adrres = connection.BluetoothAddress;
-            //readData();
+            address = connection.BluetoothAddress;
+            connection.Dispose();
         }
 
-        public async void readData()
+        public void Connect()
         {
-            GattDeviceServicesResult result = await connection.GetGattServicesAsync();
+            bluetoothClient = new BluetoothClient();
 
-            if (result.Status == GattCommunicationStatus.Success)
-            {
-                var services = result.Services;
-                foreach(var service in services)
-                {
-                    if(service.Uuid.ToString("N").Substring(4,4) == HEART_RATE_SERVICE_ID)
-                    {
-                        var encontte = 2322;
-                    }
-                }
+            var EndPoint = new BluetoothEndPoint(address, BluetoothService.SerialPort);
 
-                //var service = services.First();
+            bluetoothClient.Connect(EndPoint);
 
-                //GattCharacteristicsResult result2 = await service.GetCharacteristicsAsync();
+            //GattDeviceServicesResult result = await connection.GetGattServicesAsync();
 
-                //if (result.Status == GattCommunicationStatus.Success)
-                //{
-                //    var characteristics = result2.Characteristics;
+            //if (result.Status == GattCommunicationStatus.Success)
+            //{
+            //    var services = result.Services;
+            //    foreach(var service in services)
+            //    {
+            //        if(service.Uuid.ToString("N").Substring(4,4) == HEART_RATE_SERVICE_ID)
+            //        {
+            //            var encontte = 2322;
+            //        }
+            //    }
 
-                //    var characteristic = characteristics.First();
-                //    GattCharacteristicProperties properties = characteristic.CharacteristicProperties;
+            //    //var service = services.First();
 
-                //    GattReadResult result2323 = await characteristic.ReadValueAsync();
+            //    //GattCharacteristicsResult result2 = await service.GetCharacteristicsAsync();
 
-                //    var reader = DataReader.FromBuffer(result2323.Value);
+            //    //if (result.Status == GattCommunicationStatus.Success)
+            //    //{
+            //    //    var characteristics = result2.Characteristics;
 
-                //    byte[] input = new byte[reader.UnconsumedBufferLength];
+            //    //    var characteristic = characteristics.First();
+            //    //    GattCharacteristicProperties properties = characteristic.CharacteristicProperties;
 
-                //    reader.ReadBytes(input);
+            //    //    GattReadResult result2323 = await characteristic.ReadValueAsync();
+
+            //    //    var reader = DataReader.FromBuffer(result2323.Value);
+
+            //    //    byte[] input = new byte[reader.UnconsumedBufferLength];
+
+            //    //    reader.ReadBytes(input);
 
 
-                //}
+            //    //}
 
-            }
+            //}
+
+        }
+
+        public void ManageBL()
+        {
+            GetAddress();
+            Connect();
+            SendData();
+        }
+
+        private void SendData() 
+        {
+            NetworkStream stream = bluetoothClient.GetStream();
+
+            byte[] message = System.Text.Encoding.ASCII.GetBytes("{DG}");
+            stream.Write(message,0,message.Length);
+
+            byte[] response = new byte[1024];
+
+            int byteReceived = stream.Read(response, 0, response.Length);
+
+            var respuesta = Encoding.ASCII.GetString(response, 0, byteReceived);
+
+
+
 
         }
 
@@ -138,10 +179,11 @@ namespace uwpIntentoNuevo.BT
 
         private void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation args)
         {
-            var name = args.Name;
-            //throw new NotImplementedException();
             if(args.Name == "HC-06")
+            {
                 Device = args;
+                stop = true;
+            }
         }
     }
 }

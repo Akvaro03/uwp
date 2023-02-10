@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-10T16:21:33.238</Modified>
+      <Modified>2023-02-10T18:51:48.802</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-10T16:21:30.324</Modified>
+      <Modified>2023-02-10T18:51:46.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\inthehand.net.bluetooth\4.0.33.1\lib\uap10.0.16299\InTheHand.Net.Bluetooth.dll">
       <PackagePath>InTheHand.Net.Bluetooth.dll</PackagePath>
@@ -170,23 +170,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-02-10T16:21:30.072</Modified>
+      <Modified>2023-02-10T18:51:45.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-02-10T16:21:30.072</Modified>
+      <Modified>2023-02-10T18:51:45.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-02-10T16:21:30.072</Modified>
+      <Modified>2023-02-10T18:51:45.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-02-10T16:21:30.073</Modified>
+      <Modified>2023-02-10T18:51:45.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-02-10T16:21:30.073</Modified>
+      <Modified>2023-02-10T18:51:45.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -206,7 +206,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-02-10T16:21:33.217</Modified>
+      <Modified>2023-02-10T18:51:48.789</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
