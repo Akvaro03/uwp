@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
@@ -78,82 +79,54 @@ namespace uwpIntentoNuevo.BT
 
         }
 
-        public async void GetAddress()
+        public async void ManageBL()
+        {
+            ulong direccion = await GetAddress();
+            string respuesta = await Connect(direccion);
+            SendData();
+        }
+        public async Task<ulong> GetAddress()
         {
             connection = await BluetoothLEDevice.FromIdAsync(Device.Id);
-            address = connection.BluetoothAddress;
+            var direccion = connection.BluetoothAddress;
             connection.Dispose();
+
+            return direccion;
         }
 
-        public void Connect()
+        public async Task<string> Connect(ulong direccion)
         {
             bluetoothClient = new BluetoothClient();
 
-            var EndPoint = new BluetoothEndPoint(address, BluetoothService.SerialPort);
+            var port = BluetoothService.SerialPort;
+
+            var EndPoint = new BluetoothEndPoint(direccion, port);
 
             bluetoothClient.Connect(EndPoint);
 
-            //GattDeviceServicesResult result = await connection.GetGattServicesAsync();
-
-            //if (result.Status == GattCommunicationStatus.Success)
-            //{
-            //    var services = result.Services;
-            //    foreach(var service in services)
-            //    {
-            //        if(service.Uuid.ToString("N").Substring(4,4) == HEART_RATE_SERVICE_ID)
-            //        {
-            //            var encontte = 2322;
-            //        }
-            //    }
-
-            //    //var service = services.First();
-
-            //    //GattCharacteristicsResult result2 = await service.GetCharacteristicsAsync();
-
-            //    //if (result.Status == GattCommunicationStatus.Success)
-            //    //{
-            //    //    var characteristics = result2.Characteristics;
-
-            //    //    var characteristic = characteristics.First();
-            //    //    GattCharacteristicProperties properties = characteristic.CharacteristicProperties;
-
-            //    //    GattReadResult result2323 = await characteristic.ReadValueAsync();
-
-            //    //    var reader = DataReader.FromBuffer(result2323.Value);
-
-            //    //    byte[] input = new byte[reader.UnconsumedBufferLength];
-
-            //    //    reader.ReadBytes(input);
-
-
-            //    //}
-
-            //}
-
-        }
-
-        public void ManageBL()
-        {
-            GetAddress();
-            Connect();
-            SendData();
+            return "funciono";
+         
         }
 
         private void SendData() 
         {
             NetworkStream stream = bluetoothClient.GetStream();
 
-            byte[] message = System.Text.Encoding.ASCII.GetBytes("{DG}");
-            stream.Write(message,0,message.Length);
+            byte[] dataToSend = System.Text.Encoding.ASCII.GetBytes("{DG}\r\n");
+            stream.Write(dataToSend, 0, dataToSend.Length);
 
-            byte[] response = new byte[1024];
+            byte[] dataReceived = new byte[1024];
+            int bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
 
-            int byteReceived = stream.Read(response, 0, response.Length);
+            //            byte[] message = System.Text.Encoding.ASCII.GetBytes("{DG}\r\n");
+            //            stream.Write(message,0,message.Length);
 
-            var respuesta = Encoding.ASCII.GetString(response, 0, byteReceived);
-
-
-
+            //            if (stream.CanRead)
+            //            {
+            //                byte[] buffer = new byte[5024];
+            //                int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
+            //                var respuesta = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+            //}
 
         }
 
