@@ -52,6 +52,9 @@ namespace uwpIntentoNuevo.BT
 
         public void ShowDat()
         {
+            //bluetoothClient = new BluetoothClient();
+
+            //IReadOnlyCollection<BluetoothDeviceInfo> datos = bluetoothClient.DiscoverDevices(5);
 
 
             deviceWatcher.Start();
@@ -83,6 +86,9 @@ namespace uwpIntentoNuevo.BT
         {
             ulong direccion = await GetAddress();
             string respuesta = await Connect(direccion);
+
+            Thread.Sleep(15000);
+
             SendData();
         }
         public async Task<ulong> GetAddress()
@@ -98,6 +104,8 @@ namespace uwpIntentoNuevo.BT
         {
             bluetoothClient = new BluetoothClient();
 
+            IReadOnlyCollection<BluetoothDeviceInfo> datos =   bluetoothClient.DiscoverDevices();
+
             var port = BluetoothService.SerialPort;
 
             var EndPoint = new BluetoothEndPoint(direccion, port);
@@ -108,26 +116,28 @@ namespace uwpIntentoNuevo.BT
          
         }
 
-        private void SendData() 
+        private async void SendData()
         {
             NetworkStream stream = bluetoothClient.GetStream();
 
-            byte[] dataToSend = System.Text.Encoding.ASCII.GetBytes("{DG}\r\n");
-            stream.Write(dataToSend, 0, dataToSend.Length);
+            string dataToSend = "{DG}\r\n";
 
-            byte[] dataReceived = new byte[1024];
-            int bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
+            byte[] dataBytes = System.Text.Encoding.ASCII.GetBytes(dataToSend);
+            stream.Write(dataBytes, 0, dataBytes.Length);
 
-            //            byte[] message = System.Text.Encoding.ASCII.GetBytes("{DG}\r\n");
-            //            stream.Write(message,0,message.Length);
+            byte[] dataReceived = new byte[10000];
+            var bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
 
-            //            if (stream.CanRead)
-            //            {
-            //                byte[] buffer = new byte[5024];
-            //                int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
-            //                var respuesta = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-            //}
+            string receivedMessage = System.Text.Encoding.UTF8.GetString(dataReceived, 0, bytesRead);
 
+            //int bytesRead = 0
+
+            //byte[] dataReceived = new byte[5024];
+
+            //byte[] dataToSend = System.Text.Encoding.ASCII.GetBytes("{DG}\r\n");
+            //stream.Write(dataToSend, 0, dataToSend.Length);
+
+            //bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
         }
 
         private void DeviceWatcher_Stopped(DeviceWatcher sender, object args)
