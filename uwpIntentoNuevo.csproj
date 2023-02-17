@@ -121,6 +121,8 @@
     </Compile>
     <Compile Include="BT\BtConnection.cs" />
     <Compile Include="DB\coneccion.cs" />
+    <Compile Include="Enums\DataToSend.cs" />
+    <Compile Include="Enums\state.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

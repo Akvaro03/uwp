@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
+using uwpIntentoNuevo.Enums;
 using Windows.Devices.Bluetooth;
 using Windows.Devices.Bluetooth.GenericAttributeProfile;
 using Windows.Devices.Enumeration;
@@ -23,12 +24,18 @@ namespace uwpIntentoNuevo.BT
         public DeviceInformation Device = null;
         private bool stop = true;
         BluetoothLEDevice connection;
-        private ulong address;
         private DeviceWatcher deviceWatcher;
         private BluetoothClient bluetoothClient;
         private string nameBt;
-        public BtConnection()
+        private ulong direction;
+        NetworkStream stream;
+        public BtConnection() : this("HC-06")
         {
+        }
+        public BtConnection(string NameBt) 
+        {
+            nameBt = NameBt;
+
             deviceWatcher = null;
             string[] requestedProperties = { "System.Devices.Aep.DeviceAddress", "System.Devices.Aep.IsConnected" };
 
@@ -45,13 +52,10 @@ namespace uwpIntentoNuevo.BT
             // EnumerationCompleted and Stopped are optional to implement.
             deviceWatcher.EnumerationCompleted += DeviceWatcher_EnumerationCompleted;
             deviceWatcher.Stopped += DeviceWatcher_Stopped;
-        }
-        public BtConnection(string NameBt) : this()
-        {
-            nameBt = NameBt;
-        }
 
-        public void ShowDat()
+            SearchDirection();
+        }
+        public void SearchDirection()
         {
 
             
@@ -59,37 +63,38 @@ namespace uwpIntentoNuevo.BT
 
             while (stop)
             {
-                if (Device == null)
+                if(Device == null)
                 {
                 }
-                else if (Device.Name == "HC-06")
+                else if (Device.Name == nameBt)
                 {
-                    ManageBL();
+                    GetAddress();
+                    stop = false;
                     break;
                 }
             }
         }
+
         /// <summary>
         /// Maneja temporalmente el BL
         /// </summary>
         public async void ManageBL()
         {
-            ulong direccion = await GetAddress();
+            //ulong direccion = GetAddress();
             //ulong direccion = 168063681168911;
-            string respuesta = Connect(direccion);
+            //string respuesta = Connect(direccion);
 
             Thread.Sleep(5000);
 
-            SendData("{DG}\r\n");
         }
-        public async Task<ulong> GetAddress()
+        private async void GetAddress()
         {
             connection = await BluetoothLEDevice.FromIdAsync(Device.Id);
-            var direccion = connection.BluetoothAddress;
+            var Direccion = connection.BluetoothAddress;
             connection.Dispose();
             deviceWatcher.Stop();
 
-            return direccion;
+            direction = Direccion;
         }
 
         /// <summary>
@@ -99,30 +104,52 @@ namespace uwpIntentoNuevo.BT
         /// Direccion para conectarse al dispositivo bluetooth
         /// </param>
         /// <returns></returns>
-        public  string Connect(ulong direccion)
+        public  state.State Connect()
         {
             bluetoothClient = new BluetoothClient();
 
             var port = BluetoothService.SerialPort;
 
-            var EndPoint = new BluetoothEndPoint(direccion, port);
+            var EndPoint = new BluetoothEndPoint(direction, port);
 
             bluetoothClient.Connect(EndPoint);
 
-            return "funciono";
-         
+            stream = bluetoothClient.GetStream();
+            return state.State.succes;
         }
 
         /// <summary>
         /// Mandar datos a travez del bluetooth
         /// </summary>
-        private void SendData(string dataToSend)
+        public state.State SendData(DataToSend.data type,string dataToSend)
         {
-            NetworkStream stream = bluetoothClient.GetStream();
+            stream.Flush();
 
             byte[] dataBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
             stream.Write(dataBytes, 0, dataBytes.Length);
-        
+            return state.State.succes;
+       }
+
+        public state.State SendData(DataToSend.data type)
+        {
+            stream.Flush();
+            string dataToSend = "";
+            string space = "\r\n";
+
+            switch (type)
+            {
+                case DataToSend.data.DG:
+                    dataToSend = "{DG}" + space;
+                    break;
+            }
+
+            byte[] dataBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
+            stream.Write(dataBytes, 0, dataBytes.Length);
+            return state.State.succes;
+        }
+
+        public string ReadData() 
+        {
             stream.Flush();
 
             byte[] dataReceived = new byte[100000];
@@ -133,7 +160,10 @@ namespace uwpIntentoNuevo.BT
 
             string receivedMessage = System.Text.Encoding.UTF8.GetString(dataReceived, 0, bytesRead);
             string cleaned = receivedMessage.Replace("\n", "").Replace("\r", "").Replace("DG{", "").Replace("}", "");
+
+            return cleaned;
         }
+
 
 
 
@@ -160,10 +190,9 @@ namespace uwpIntentoNuevo.BT
 
         private void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation args)
         {
-            if(args.Name == "HC-06")
+            if(args.Name == nameBt)
             {
                 Device = args;
-                stop = true;
             }
         }
     }

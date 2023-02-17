@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using uwpIntentoNuevo.BT;
+using uwpIntentoNuevo.Enums;
 using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -28,7 +29,7 @@ namespace uwpIntentoNuevo.view
         public Ensayos()
         {
             this.InitializeComponent();
-            bt = new BtConnection("hola");
+            bt = new BtConnection();
         }
 
         //private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
@@ -38,7 +39,15 @@ namespace uwpIntentoNuevo.view
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            bt.ShowDat();
+            try
+            {
+                bt.Connect();
+                bt.SendData(DataToSend.data.DG);
+                string respuesta = bt.ReadData();
+            } catch (SystemException h)
+            {
+
+            }
 
         }
     }
