@@ -28,7 +28,7 @@ namespace uwpIntentoNuevo.view
         public Ensayos()
         {
             this.InitializeComponent();
-            bt = new BtConnection();
+            bt = new BtConnection("hola");
         }
 
         //private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)

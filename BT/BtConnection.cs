@@ -26,69 +26,56 @@ namespace uwpIntentoNuevo.BT
         private ulong address;
         private DeviceWatcher deviceWatcher;
         private BluetoothClient bluetoothClient;
-
+        private string nameBt;
         public BtConnection()
         {
+            deviceWatcher = null;
+            string[] requestedProperties = { "System.Devices.Aep.DeviceAddress", "System.Devices.Aep.IsConnected" };
+
+            deviceWatcher =
+                        DeviceInformation.CreateWatcher(
+                                BluetoothLEDevice.GetDeviceSelectorFromPairingState(false),
+                                requestedProperties,
+                                DeviceInformationKind.AssociationEndpoint);
+
+            deviceWatcher.Added += DeviceWatcher_Added;
+            deviceWatcher.Updated += DeviceWatcher_Updated;
+            deviceWatcher.Removed += DeviceWatcher_Removed;
+
+            // EnumerationCompleted and Stopped are optional to implement.
+            deviceWatcher.EnumerationCompleted += DeviceWatcher_EnumerationCompleted;
+            deviceWatcher.Stopped += DeviceWatcher_Stopped;
+        }
+        public BtConnection(string NameBt) : this()
+        {
+            nameBt = NameBt;
         }
 
         public void ShowDat()
         {
 
-            //deviceWatcher = null;
-            ////// Query for extra properties you want returned
-            //string[] requestedProperties = { "System.Devices.Aep.DeviceAddress", "System.Devices.Aep.IsConnected" };
+            
+            deviceWatcher.Start();
 
-            //deviceWatcher =
-            //            DeviceInformation.CreateWatcher(
-            //                    BluetoothLEDevice.GetDeviceSelectorFromPairingState(false),
-            //                    requestedProperties,
-            //                    DeviceInformationKind.AssociationEndpoint);
-
-            //// Register event handlers before starting the watcher.
-            //// Added, Updated and Removed are required to get all nearby devices
-            //deviceWatcher.Added += DeviceWatcher_Added;
-            //deviceWatcher.Updated += DeviceWatcher_Updated;
-            //deviceWatcher.Removed += DeviceWatcher_Removed;
-
-            //// EnumerationCompleted and Stopped are optional to implement.
-            //deviceWatcher.EnumerationCompleted += DeviceWatcher_EnumerationCompleted;
-            //deviceWatcher.Stopped += DeviceWatcher_Stopped;
-            ////bluetoothClient = new BluetoothClient();
-
-            ////IReadOnlyCollection<BluetoothDeviceInfo> datos = bluetoothClient.DiscoverDevices(5);
-
-
-            //deviceWatcher.Start();
-            ////BluetoothClient intent = new BluetoothClient();
-            ////intent.DiscoverDevicesInRangeTimeOut = TimeSpan.FromSeconds(5);
-
-            ////IReadOnlyCollection<BluetoothDeviceInfo> devices = intent.DiscoverDevices(2);
-
-            ////foreach (BluetoothDeviceInfo item in devices)
-            ////{
-            ////    var i = item.DeviceAddress;
-            ////}
-
-            //while (stop)
-            //{
-            //    if (Device == null)
-            //    {
-            //    }
-            //    else if (Device.Name == "HC-06")
-            //    {
-            //        ManageBL();
-            //        break;
-            //    }
-            //}
-            ManageBL();
+            while (stop)
+            {
+                if (Device == null)
+                {
+                }
+                else if (Device.Name == "HC-06")
+                {
+                    ManageBL();
+                    break;
+                }
+            }
         }
         /// <summary>
         /// Maneja temporalmente el BL
         /// </summary>
-        public void ManageBL()
+        public async void ManageBL()
         {
-            //ulong direccion = await GetAddress();
-            ulong direccion = 168063681168911;
+            ulong direccion = await GetAddress();
+            //ulong direccion = 168063681168911;
             string respuesta = Connect(direccion);
 
             Thread.Sleep(5000);
@@ -139,9 +126,13 @@ namespace uwpIntentoNuevo.BT
             stream.Flush();
 
             byte[] dataReceived = new byte[100000];
+
+            Thread.Sleep(3000);
+
             var bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
 
             string receivedMessage = System.Text.Encoding.UTF8.GetString(dataReceived, 0, bytesRead);
+            string cleaned = receivedMessage.Replace("\n", "").Replace("\r", "").Replace("DG{", "").Replace("}", "");
         }
 
 
