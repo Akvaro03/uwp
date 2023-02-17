@@ -35,7 +35,7 @@ namespace uwpIntentoNuevo.view
         {
             this.InitializeComponent();
 
-            this.NombreBuscador = "hola";
+            this.NombreBuscador = "";
             coneccion = new DB.coneccion();
 
             ensayos = coneccion.getData();

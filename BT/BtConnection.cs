@@ -55,6 +55,7 @@ namespace uwpIntentoNuevo.BT
 
             SearchDirection();
         }
+
         public void SearchDirection()
         {
 
@@ -75,18 +76,6 @@ namespace uwpIntentoNuevo.BT
             }
         }
 
-        /// <summary>
-        /// Maneja temporalmente el BL
-        /// </summary>
-        public async void ManageBL()
-        {
-            //ulong direccion = GetAddress();
-            //ulong direccion = 168063681168911;
-            //string respuesta = Connect(direccion);
-
-            Thread.Sleep(5000);
-
-        }
         private async void GetAddress()
         {
             connection = await BluetoothLEDevice.FromIdAsync(Device.Id);
@@ -124,17 +113,8 @@ namespace uwpIntentoNuevo.BT
         public state.State SendData(DataToSend.data type,string dataToSend)
         {
             stream.Flush();
-
-            byte[] dataBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
-            stream.Write(dataBytes, 0, dataBytes.Length);
-            return state.State.succes;
-       }
-
-        public state.State SendData(DataToSend.data type)
-        {
-            stream.Flush();
-            string dataToSend = "";
             string space = "\r\n";
+
 
             switch (type)
             {
@@ -146,6 +126,11 @@ namespace uwpIntentoNuevo.BT
             byte[] dataBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
             stream.Write(dataBytes, 0, dataBytes.Length);
             return state.State.succes;
+       }
+
+        public state.State SendData(DataToSend.data type)
+        {
+            return SendData(type, null);
         }
 
         public string ReadData() 
@@ -163,6 +148,11 @@ namespace uwpIntentoNuevo.BT
 
             return cleaned;
         }
+
+
+
+
+
 
 
 

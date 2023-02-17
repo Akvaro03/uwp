@@ -21,6 +21,17 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
+            <Button x:ConnectionId='3'     
+                    Content="Salir"
+                    Grid.Row="0"
+                    Background="#04D976"
+                    FontSize="20"
+                    Foreground="#fff"
+                    FontFamily="Bold"
+                    Padding="50,10"
+                    VerticalAlignment="Top" Margin="20,20,0,0"
+                                          
+                />
             <TextBlock Text="Seleccionar los ensayos a realizar :"
                            Foreground="#fff"
                            FontSize="18"
@@ -57,7 +68,7 @@ Margin="110,0,0,0"
                                     IsChecked="{Binding IsPATChecked}"/>
 
             </Grid>
-            <Button x:ConnectionId='3' Content="Comenzar ensayo/s"
+            <Button x:ConnectionId='4' Content="Comenzar ensayo/s"
                         Grid.Column="1"
                     Grid.Row="2"
 HorizontalAlignment="Center"
