@@ -22,11 +22,17 @@ namespace uwpIntentoNuevo.view
     public sealed partial class Ensayos : Page
     {
         private readonly BtConnection bt;
+        public bool IsFugaChecked { get; set; }
+
+        public bool IsPuestaChecked { get; set; }
+
         public Ensayos()
         {
+            DataContext = IsPuestaChecked;
             this.InitializeComponent();
             bt = new BtConnection();
         }
+
 
         public void NavigationHome(object sender, RoutedEventArgs e)
         {
@@ -35,14 +41,32 @@ namespace uwpIntentoNuevo.view
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool hola = IsFugaChecked;
+            bool hola2 = IsPuestaChecked;
             try
             {
                 bt.Connect();
                 bt.SendData(DataToSend.data.DG);
                 string respuesta = bt.ReadData();
-            } catch (SystemException)
+            }
+            catch (SystemException)
             {
             }
+
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
+        {
 
         }
     }

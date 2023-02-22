@@ -128,7 +128,7 @@ namespace uwpIntentoNuevo.BT
             return state.State.succes;
        }
 
-        public state.State SendData(DataToSend.data type)
+        public state.State SendData(DataToSend.data type) 
         {
             return SendData(type, null);
         }

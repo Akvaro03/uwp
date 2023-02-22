@@ -4,7 +4,7 @@
     <RootPropertyPathName Name="ClientName" />
     <RootPropertyPathName Name="SaveConfig" />
     <RootPropertyPathName Name="Ensayar" />
-    <RootPropertyPathName Name="IsPATChecked" />
+    <RootPropertyPathName Name="IsPuestaChecked" />
     <RootPropertyPathName Name="IsFugaChecked" />
     <RootPropertyPathName Name="ValorEnsayo" />
     <RootPropertyPathName Name="NombreEnsayo" />
@@ -33,6 +33,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="ColumnSpacing" />
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetColumn" />
@@ -110,10 +112,10 @@
     </RootType>
     <RootType FullName="uwpIntentoNuevo.view.Config" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
-      <RootProperty Name="Background" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsChecked" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="uwpIntentoNuevo.view.Ensayos" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
