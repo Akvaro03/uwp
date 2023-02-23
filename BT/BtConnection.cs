@@ -32,7 +32,7 @@ namespace uwpIntentoNuevo.BT
         public BtConnection() : this("HC-06")
         {
         }
-        public BtConnection(string NameBt) 
+        public BtConnection(string NameBt)
         {
             nameBt = NameBt;
 
@@ -59,12 +59,12 @@ namespace uwpIntentoNuevo.BT
         public void SearchDirection()
         {
 
-            
+
             deviceWatcher.Start();
 
             while (stop)
             {
-                if(Device == null)
+                if (Device == null)
                 {
                 }
                 else if (Device.Name == nameBt)
@@ -93,7 +93,7 @@ namespace uwpIntentoNuevo.BT
         /// Direccion para conectarse al dispositivo bluetooth
         /// </param>
         /// <returns></returns>
-        public  state.State Connect()
+        public state.State Connect()
         {
             bluetoothClient = new BluetoothClient();
 
@@ -110,7 +110,7 @@ namespace uwpIntentoNuevo.BT
         /// <summary>
         /// Mandar datos a travez del bluetooth
         /// </summary>
-        public state.State SendData(DataToSend.data type,string dataToSend)
+        public Task<string> SendData(DataToSend.data type, string dataToSend)
         {
             stream.Flush();
             string space = "\r\n";
@@ -121,19 +121,32 @@ namespace uwpIntentoNuevo.BT
                 case DataToSend.data.DG:
                     dataToSend = "{DG}" + space;
                     break;
+                case DataToSend.data.F:
+                    dataToSend = "{F}" + space;
+                    break;
+                case DataToSend.data.E1:
+                    dataToSend = "{E1}" + space;
+                    break;
+                case DataToSend.data.E2:
+                    dataToSend = "{E2}" + space;
+                    break;
+
             }
 
             byte[] dataBytes = System.Text.Encoding.UTF8.GetBytes(dataToSend);
             stream.Write(dataBytes, 0, dataBytes.Length);
-            return state.State.succes;
-       }
+            stream.Flush();
 
-        public state.State SendData(DataToSend.data type) 
+            return ReadData();
+
+        }
+
+        public Task<string> SendData(DataToSend.data type)
         {
             return SendData(type, null);
         }
 
-        public string ReadData() 
+        public Task<string> ReadData()
         {
             stream.Flush();
 
@@ -144,9 +157,8 @@ namespace uwpIntentoNuevo.BT
             var bytesRead = stream.Read(dataReceived, 0, dataReceived.Length);
 
             string receivedMessage = System.Text.Encoding.UTF8.GetString(dataReceived, 0, bytesRead);
-            string cleaned = receivedMessage.Replace("\n", "").Replace("\r", "").Replace("DG{", "").Replace("}", "");
-
-            return cleaned;
+            stream.Flush();
+            return Task.FromResult(receivedMessage);
         }
 
 
@@ -180,7 +192,7 @@ namespace uwpIntentoNuevo.BT
 
         private void DeviceWatcher_Added(DeviceWatcher sender, DeviceInformation args)
         {
-            if(args.Name == nameBt)
+            if (args.Name == nameBt)
             {
                 Device = args;
             }

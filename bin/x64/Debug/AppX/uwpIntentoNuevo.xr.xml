@@ -35,6 +35,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnSpacing" />
       <RootProperty Name="CornerRadius" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetColumn" />

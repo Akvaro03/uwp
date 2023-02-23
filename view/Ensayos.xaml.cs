@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using uwpIntentoNuevo.BT;
+using uwpIntentoNuevo.Ensayar;
 using uwpIntentoNuevo.Enums;
 using Windows.Devices.Enumeration;
 using Windows.Foundation;
@@ -22,15 +23,14 @@ namespace uwpIntentoNuevo.view
     public sealed partial class Ensayos : Page
     {
         private readonly BtConnection bt;
-        public bool IsFugaChecked { get; set; }
+        private readonly EnsayarClass Ensayar;
 
-        public bool IsPuestaChecked { get; set; }
 
         public Ensayos()
         {
-            DataContext = IsPuestaChecked;
             this.InitializeComponent();
             bt = new BtConnection();
+            Ensayar = new EnsayarClass();
         }
 
 
@@ -39,19 +39,13 @@ namespace uwpIntentoNuevo.view
             frame.Navigate(typeof(MainPage));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            bool hola = IsFugaChecked;
-            bool hola2 = IsPuestaChecked;
-            try
-            {
-                bt.Connect();
-                bt.SendData(DataToSend.data.DG);
-                string respuesta = bt.ReadData();
-            }
-            catch (SystemException)
-            {
-            }
+            bool isFugaChecked = (bool)FugaChecked.IsChecked;
+            bool isPuestaChecked = (bool)PuestaChecked.IsChecked;
+
+            string resp = await Ensayar.Ensayar(isFugaChecked, isPuestaChecked);
+
 
         }
 
