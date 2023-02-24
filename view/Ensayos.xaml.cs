@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
+using System.Threading;
 using uwpIntentoNuevo.BT;
 using uwpIntentoNuevo.Ensayar;
 using uwpIntentoNuevo.Enums;
@@ -44,24 +46,22 @@ namespace uwpIntentoNuevo.view
             bool isFugaChecked = (bool)FugaChecked.IsChecked;
             bool isPuestaChecked = (bool)PuestaChecked.IsChecked;
 
-            string resp = await Ensayar.Ensayar(isFugaChecked, isPuestaChecked);
+            ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
+            ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
+            Thread.Sleep(5000);
+            string[] resp = await Ensayar.Ensayar(isFugaChecked, isPuestaChecked);
+
+            bool pass1 = IsPassed(resp[0]);
+            bool pass2 = IsPassed(resp[1]);
 
 
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        private bool IsPassed(string stringToVerificate)
         {
-
+            string recort = stringToVerificate.ToString().Substring((stringToVerificate.Length - 15), 15);
+            return Regex.IsMatch(recort, ";");
         }
 
-        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBlock_SelectionChanged_2(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

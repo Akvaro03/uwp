@@ -158,6 +158,8 @@ namespace uwpIntentoNuevo.BT
 
             string receivedMessage = System.Text.Encoding.UTF8.GetString(dataReceived, 0, bytesRead);
             stream.Flush();
+
+            receivedMessage = receivedMessage.Replace("\r\n", "");
             return Task.FromResult(receivedMessage);
         }
 

@@ -19,31 +19,25 @@ namespace uwpIntentoNuevo.Ensayar
         }
 
 
-        public async Task<string> Ensayar(params bool[] args)
+        public async Task<string[]> Ensayar(params bool[] args)
         {
-            try
+            bt.Connect();
+            string respuesta = "";
+
+            while (respuesta.Length < 10)
             {
-                bt.Connect();
-                string respuesta = "";
+                respuesta = await bt.SendData(DataToSend.data.E1);
+            };
 
-                while (respuesta.Length < 7)
-                {
-                    respuesta = await bt.SendData(DataToSend.data.E1);
-                };
-
-                string respuesta2 = "";
-                while (respuesta2.Length < 10)
-                {
-                    respuesta2 = await bt.SendData(DataToSend.data.E2);
-                }
-
-            }
-            catch (SystemException)
+            string respuesta2 = "";
+            while (respuesta2.Length < 10)
             {
+                respuesta2 = await bt.SendData(DataToSend.data.E2);
             }
 
 
-            return "hola";
+            string[] resp = new string[2] { respuesta, respuesta2 };
+            return resp;
         }
     }
 }
