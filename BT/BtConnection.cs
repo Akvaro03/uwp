@@ -84,6 +84,8 @@ namespace uwpIntentoNuevo.BT
             deviceWatcher.Stop();
 
             direction = Direccion;
+
+            Connect();
         }
 
         /// <summary>

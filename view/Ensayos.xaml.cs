@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Threading.Tasks;
 using uwpIntentoNuevo.BT;
 using uwpIntentoNuevo.Ensayar;
 using uwpIntentoNuevo.Enums;
@@ -31,7 +33,6 @@ namespace uwpIntentoNuevo.view
         public Ensayos()
         {
             this.InitializeComponent();
-            bt = new BtConnection();
             Ensayar = new EnsayarClass();
         }
 
@@ -41,26 +42,92 @@ namespace uwpIntentoNuevo.view
             frame.Navigate(typeof(MainPage));
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             bool isFugaChecked = (bool)FugaChecked.IsChecked;
+            if (isFugaChecked)
+            {
+                ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
+                ManageDatosFuga();
+            }
+
+            //Stopwatch timeMeasure = new Stopwatch();
+            //timeMeasure.Start();
+            //timeMeasure.Stop();
+            //double tempo = timeMeasure.Elapsed.TotalMilliseconds;
+
             bool isPuestaChecked = (bool)PuestaChecked.IsChecked;
-
-            ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
-            ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
-            Thread.Sleep(5000);
-            string[] resp = await Ensayar.Ensayar(isFugaChecked, isPuestaChecked);
-
-            bool pass1 = IsPassed(resp[0]);
-            bool pass2 = IsPassed(resp[1]);
-
+            if (isPuestaChecked)
+            {
+                ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
+                ManageDatosPuesta();
+            }
 
         }
 
+        private async void ManageDatosFuga()
+        {
+            string prueba = await Task.Run(async () =>
+            {
+                string[] resp = await Ensayar.Ensayar(1);
+                return resp[0];
+            });
+
+            bool pass = IsPassed(prueba);
+            string value = GetValueFromString(prueba);
+
+            ValueCfp.Text = value;
+            if (pass)
+                ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.DarkGreen);
+            else
+                ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+
+        }
+        private async void ManageDatosPuesta()
+        {
+            string prueba = await Task.Run(async () =>
+            {
+                string[] resp = await Ensayar.Ensayar(2);
+                return resp[1];
+
+
+
+
+            });
+
+            bool pass = IsPassed(prueba);
+            string value = GetValueFromString(prueba);
+
+            ValuePat.Text = value;
+            if (pass)
+                ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.DarkGreen);
+            else
+                ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+
+        }
+
+
         private bool IsPassed(string stringToVerificate)
         {
-            string recort = stringToVerificate.ToString().Substring((stringToVerificate.Length - 15), 15);
-            return Regex.IsMatch(recort, ";");
+            if (stringToVerificate != "")
+            {
+                string recort = stringToVerificate.ToString().Substring((stringToVerificate.Length - 15), 15);
+                return Regex.IsMatch(recort, ";");
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private string GetValueFromString(string stringToValue)
+        {
+            if (stringToValue != "")
+            {
+                string[] value = stringToValue.Split(";");
+                return value[7];
+            }
+            return "";
         }
 
     }

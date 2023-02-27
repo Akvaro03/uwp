@@ -39,7 +39,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0" Grid.Row="1" Margin="150,0,40,0">
                     <Grid DataContext="">
-                        <CheckBox x:ConnectionId='8' IsChecked="{Binding IsFugaChecked}"
+                        <CheckBox x:ConnectionId='10' IsChecked="{Binding IsFugaChecked}"
                                   x:Name="FugaChecked"
                                   Background="#8979F2"
                                   VerticalAlignment="Top"
@@ -51,15 +51,15 @@
                                    HorizontalAlignment="Center"
                                    />
                     </Grid>
-                    <Grid x:ConnectionId='7' Background="#8979f2" Margin="0,80,0,40" CornerRadius="25" x:Name="ContentFuga">
+                    <Grid x:ConnectionId='8' Background="#8979f2" Margin="0,80,0,40" CornerRadius="25" x:Name="ContentFuga">
                         <TextBlock Text="CFP" Foreground="White" FontSize="50" Margin="20,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                        <TextBlock Text="Valor: 0" Foreground="White" FontSize="30" Margin="30,13" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+                        <TextBlock x:ConnectionId='9' x:Name="ValueCfp" Text="Valor: 0" Foreground="White" FontSize="30" Margin="30,13" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
                     </Grid>
 
                 </Grid>
                 <Grid Grid.Column="1" Margin="40,0,150,0" >
                     <Grid >
-                        <CheckBox x:ConnectionId='6' IsChecked="{Binding IsPuestaChecked}"
+                        <CheckBox x:ConnectionId='7' IsChecked="{Binding IsPuestaChecked}"
                                   x:Name="PuestaChecked"
                                   Background="#8979F2"
                                   VerticalAlignment="Top"
@@ -73,7 +73,7 @@
                     </Grid>
                     <Grid x:ConnectionId='5' Background="#8979f2" Margin="0,80,0,40" CornerRadius="25" x:Name="ContentPuesta">
                         <TextBlock Text="PAT" Foreground="White" FontSize="50" Margin="20,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                        <TextBlock Text="Valor: 0" Foreground="White" FontSize="30" Margin="30,13" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+                        <TextBlock x:ConnectionId='6' x:Name="ValuePat" Text="Valor: 0" Foreground="White" FontSize="30" Margin="30,13" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
                     </Grid>
 
                 </Grid>
