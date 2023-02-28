@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using uwpIntentoNuevo.DB;
+using uwpIntentoNuevo.Types;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -36,11 +37,36 @@ namespace uwpIntentoNuevo.view
             this.InitializeComponent();
 
             this.NombreBuscador = "";
+
             coneccion = new DB.coneccion();
+            Collection<EnsayosDBModel> Data = coneccion.getData();
+            ensayos = Data;
+            Collection<GroupEnsayos> ordenEnsayos = OrderCollection(Data);
+            this.DataContext = this;
+        }
 
-            ensayos = coneccion.getData();
+        private Collection<GroupEnsayos> OrderCollection(Collection<EnsayosDBModel> ensayos)
+        {
+            Collection<GroupEnsayos> groupEnsayos = new Collection<GroupEnsayos>();
 
-            this.DataContext  = this;
+            for (int i = 1; i < ensayos.Count; i++)
+            {
+                EnsayosDBModel actualEnsayo = ensayos[i];
+                EnsayosDBModel anteriorEnsayo = ensayos[i - 1];
+                GroupEnsayos group;
+                if (anteriorEnsayo.VerificacionKey == actualEnsayo.VerificacionKey)
+                {
+
+                    if (actualEnsayo.NombreEnsayo == "CFP")
+                        group = new GroupEnsayos(actualEnsayo.FechaEnsayo, anteriorEnsayo.EstadoEnsayo, anteriorEnsayo.ValorEnsayo, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo);
+                    else
+                        group = new GroupEnsayos(actualEnsayo.FechaEnsayo, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo, anteriorEnsayo.EstadoEnsayo, anteriorEnsayo.ValorEnsayo);
+
+                    groupEnsayos.Add(group);
+                }
+            }
+
+            return groupEnsayos;
         }
 
         public void NavigationHome(object sender, RoutedEventArgs e)

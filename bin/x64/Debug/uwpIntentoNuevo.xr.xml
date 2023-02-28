@@ -37,7 +37,6 @@
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetColumnSpan" />
@@ -86,8 +85,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />

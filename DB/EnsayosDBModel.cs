@@ -22,11 +22,11 @@ namespace uwpIntentoNuevo.DB
         public EnsayosDBModel(object[] args) : this()
         {
             this.NombreEnsayo = (string)args.ElementAt(0);
+            this.EstadoEnsayo = (string)args.ElementAt(1);
+            this.FechaEnsayo = (DateTime)args.ElementAt(2);
             this.ValorEnsayo = (Double)args.ElementAt(3);
             this.id = (int)args.ElementAt(4);
-            this.EstadoEnsayo = (string)args.ElementAt(1);
             this.VerificacionKey = (string)args.ElementAt(5);
-            this.FechaEnsayo = (DateTime)args.ElementAt(2);
         }
 
     }

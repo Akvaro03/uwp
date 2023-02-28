@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using uwpIntentoNuevo.Ensayar;
 
 namespace uwpIntentoNuevo.DB
 {
@@ -25,20 +26,19 @@ namespace uwpIntentoNuevo.DB
 
                 var command = new MySqlCommand("SELECT * FROM Ensayos;", connection);
                 var reader = command.ExecuteReader();
-                //reader.Read();
-                ////var datos = reader.GetValues();
 
-                    object[] buffer = new object[6];
+                object[] buffer = new object[6];
 
                 List<object[]> todo = new List<object[]>();
 
-                while (reader.Read()) {
+                while (reader.Read())
+                {
                     reader.GetValues(buffer);
-                    todo.Add(buffer); 
+                    todo.Add(buffer);
                 }
 
 
-                foreach(object[] item in todo )
+                foreach (object[] item in todo)
                 {
                     values.Add(new EnsayosDBModel(item));
                 }
@@ -48,7 +48,36 @@ namespace uwpIntentoNuevo.DB
             }
             catch (MySqlException)
             {
-                return null ;
+                return null;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }
+        public void sendData(EnsayoDbModel dataToSend)
+        {
+            connection.ConnectionString = stringConeccion;
+            try
+            {
+                connection.Open();
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = "INSERT INTO ensayos (NombreEnsayo, EstadoEnsayo, FechaEnsayo, ValorEnsayo, VerificationKey) VALUES (@valor1, @valor2, @valor3, @valor4, @valor5)";
+                command.Parameters.AddWithValue("@Valor1", dataToSend.NombreEnnsayo);
+                command.Parameters.AddWithValue("@Valor2", dataToSend.EstadoEnsayo);
+                command.Parameters.AddWithValue("@Valor3", dataToSend.FechaEnsayo);
+                command.Parameters.AddWithValue("@Valor4", dataToSend.ValorEnsayo);
+                command.Parameters.AddWithValue("@Valor5", dataToSend.VerificacionKey);
+
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                connection.Close();
             }
 
         }

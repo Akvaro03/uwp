@@ -129,6 +129,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\GroupEnsayos.cs" />
     <Compile Include="Types\TypeEnsayos.cs" />
     <Compile Include="view\Config.xaml.cs">
       <DependentUpon>Config.xaml</DependentUpon>
