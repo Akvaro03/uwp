@@ -100,7 +100,13 @@
                     />
             </Grid>
             <!--Categorias-->
-            <ListView x:ConnectionId='4' x:Name="EnsayosListView" Margin="50 40" Height="400"                                 Padding="0" Grid.Row="2" >
+            <ListView x:ConnectionId='4' x:Name="EnsayosListView"  Margin="50 40" Height="400"                                  Padding="0" Grid.Row="2" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Height" Value="80" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+
                 <ListView.Header>
                     <Grid Background="#8979F2" Padding="10">
                         <Grid.RowDefinitions>
@@ -122,8 +128,8 @@
                 </ListView.Header>
                 <!--Datos-->
                 <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Height="110" Width="1150" Margin="6">
+                    <DataTemplate >
+                        <Grid Height="30"  Width="1150" Margin="1">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
@@ -134,13 +140,13 @@
 
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
+                            </Grid.RowDefinitions >
 
-                            <TextBlock HorizontalAlignment="Center" Grid.Column="0" Foreground="Wheat" Text="{Binding FechaEnsayo}"  MaxHeight="60"/>
-                            <TextBlock HorizontalAlignment="Center" Grid.Column="1" Foreground="Wheat" Text="{Binding EstadoEnsayo}"  MaxHeight="60"/>
-                            <TextBlock HorizontalAlignment="Center" Grid.Column="2" Foreground="Wheat" Text="{Binding id}"  MaxHeight="60"/>
-                            <TextBlock HorizontalAlignment="Center" Grid.Column="3" Foreground="Wheat" Text="{Binding NombreEnsayo}"  MaxHeight="60"/>
-                            <TextBlock HorizontalAlignment="Center" Grid.Column="4" Foreground="Wheat" Text="{Binding ValorEnsayo}"  MaxHeight="60"/>
+                            <TextBlock FontSize="19" HorizontalAlignment="Center" Grid.Column="0" Foreground="Wheat" MaxHeight="30" Text="{Binding FechaEnsayo}"/>
+                            <TextBlock FontSize="19" HorizontalAlignment="Center" Grid.Column="1" Foreground="Wheat" MaxHeight="30" Text="{Binding statePat}"/>
+                            <TextBlock FontSize="19" HorizontalAlignment="Center" Grid.Column="2" Foreground="Wheat" MaxHeight="30" Text="{Binding valuePat}"/>
+                            <TextBlock FontSize="19" HorizontalAlignment="Center" Grid.Column="3" Foreground="Wheat" MaxHeight="30" Text="{Binding stateCfp}"/>
+                            <TextBlock FontSize="19" HorizontalAlignment="Center" Grid.Column="4" Foreground="Wheat" MaxHeight="30" Text="{Binding valueCfp}"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>

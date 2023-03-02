@@ -19,6 +19,11 @@ namespace uwpIntentoNuevo.Ensayar
             bt = new BtConnection();
         }
 
+        public void CloseBt()
+        {
+            bt.Close();
+        }
+
         public async Task<string[]> Ensayar(int ensayoType)
         {
             string respuesta = "";

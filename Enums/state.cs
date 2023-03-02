@@ -8,8 +8,11 @@ namespace uwpIntentoNuevo.Enums
 {
     public class state
     {
-        public enum State{
+        public enum State
+        {
+            none,
             succes,
+            inProcess,
             failure
         }
     }

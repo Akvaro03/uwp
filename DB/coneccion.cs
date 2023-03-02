@@ -23,26 +23,26 @@ namespace uwpIntentoNuevo.DB
                 connection.ConnectionString = stringConeccion;
                 connection.Open();
 
-
-                var command = new MySqlCommand("SELECT * FROM Ensayos;", connection);
-                var reader = command.ExecuteReader();
-
-                object[] buffer = new object[6];
-
                 List<object[]> todo = new List<object[]>();
 
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM ensayos";
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                object[] buffer = new object[6];
                 while (reader.Read())
                 {
+                    buffer = new object[6];
+                    var dato = reader.GetValues(buffer);
                     reader.GetValues(buffer);
                     todo.Add(buffer);
                 }
-
 
                 foreach (object[] item in todo)
                 {
                     values.Add(new EnsayosDBModel(item));
                 }
-
 
                 return values;
             }

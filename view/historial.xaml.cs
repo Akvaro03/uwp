@@ -28,7 +28,7 @@ namespace uwpIntentoNuevo.view
     {
         DB.coneccion coneccion;
 
-        public Collection<EnsayosDBModel> ensayos { get; set; }
+        public Collection<GroupEnsayos> ensayos { get; set; }
 
         public string NombreBuscador { get; set; }
 
@@ -40,8 +40,8 @@ namespace uwpIntentoNuevo.view
 
             coneccion = new DB.coneccion();
             Collection<EnsayosDBModel> Data = coneccion.getData();
-            ensayos = Data;
             Collection<GroupEnsayos> ordenEnsayos = OrderCollection(Data);
+            ensayos = ordenEnsayos;
             this.DataContext = this;
         }
 
@@ -53,6 +53,10 @@ namespace uwpIntentoNuevo.view
             {
                 EnsayosDBModel actualEnsayo = ensayos[i];
                 EnsayosDBModel anteriorEnsayo = ensayos[i - 1];
+                EnsayosDBModel siguienteEnsayo = ensayos[i];
+                if (i != ensayos.Count - 1)
+                    siguienteEnsayo = ensayos[i + 1];
+
                 GroupEnsayos group;
                 if (anteriorEnsayo.VerificacionKey == actualEnsayo.VerificacionKey)
                 {
@@ -63,6 +67,59 @@ namespace uwpIntentoNuevo.view
                         group = new GroupEnsayos(actualEnsayo.FechaEnsayo, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo, anteriorEnsayo.EstadoEnsayo, anteriorEnsayo.ValorEnsayo);
 
                     groupEnsayos.Add(group);
+
+                }
+                else if (i != 1)
+                {
+                    if (siguienteEnsayo.VerificacionKey != actualEnsayo.VerificacionKey)
+                    {
+                        if (actualEnsayo.NombreEnsayo == "CFP")
+                            group = new GroupEnsayos(actualEnsayo.FechaEnsayo, null, 0, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo);
+                        else
+                            group = new GroupEnsayos(actualEnsayo.FechaEnsayo, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo, null, 0);
+
+                        groupEnsayos.Add(group);
+
+                        if (i == ensayos.Count - 1)
+                        {
+                            if (actualEnsayo.NombreEnsayo == "CFP")
+                                group = new GroupEnsayos(siguienteEnsayo.FechaEnsayo, null, 0, siguienteEnsayo.EstadoEnsayo, siguienteEnsayo.ValorEnsayo);
+                            else
+                                group = new GroupEnsayos(siguienteEnsayo.FechaEnsayo, siguienteEnsayo.EstadoEnsayo, siguienteEnsayo.ValorEnsayo, null, 0);
+
+                            groupEnsayos.Add(group);
+                        }
+
+                    }
+                    else if (i == ensayos.Count - 1)
+                    {
+                        if (actualEnsayo.NombreEnsayo == "CFP")
+                            group = new GroupEnsayos(siguienteEnsayo.FechaEnsayo, null, 0, siguienteEnsayo.EstadoEnsayo, siguienteEnsayo.ValorEnsayo);
+                        else
+                            group = new GroupEnsayos(siguienteEnsayo.FechaEnsayo, siguienteEnsayo.EstadoEnsayo, siguienteEnsayo.ValorEnsayo, null, 0);
+
+                        groupEnsayos.Add(group);
+                    }
+                }
+                else
+                {
+                    if (anteriorEnsayo.NombreEnsayo == "CFP")
+                        group = new GroupEnsayos(anteriorEnsayo.FechaEnsayo, null, 0, anteriorEnsayo.EstadoEnsayo, anteriorEnsayo.ValorEnsayo);
+                    else
+                        group = new GroupEnsayos(anteriorEnsayo.FechaEnsayo, anteriorEnsayo.EstadoEnsayo, anteriorEnsayo.ValorEnsayo, null, 0);
+
+                    groupEnsayos.Add(group);
+
+                    if (siguienteEnsayo.VerificacionKey != actualEnsayo.VerificacionKey)
+                    {
+                        if (actualEnsayo.NombreEnsayo == "CFP")
+                            group = new GroupEnsayos(actualEnsayo.FechaEnsayo, null, 0, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo);
+                        else
+                            group = new GroupEnsayos(actualEnsayo.FechaEnsayo, actualEnsayo.EstadoEnsayo, actualEnsayo.ValorEnsayo, null, 0);
+
+                        groupEnsayos.Add(group);
+                    }
+
                 }
             }
 

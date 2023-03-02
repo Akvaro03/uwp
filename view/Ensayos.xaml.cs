@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -29,11 +30,15 @@ namespace uwpIntentoNuevo.view
     {
         private readonly EnsayarClass Ensayar;
         DB.coneccion coneccion;
+        state.State stateEnsayoCFP;
+        state.State stateEnsayoPAT;
 
 
         public Ensayos()
         {
             this.InitializeComponent();
+            stateEnsayoCFP = state.State.none;
+            stateEnsayoPAT = state.State.none;
             Ensayar = new EnsayarClass();
             coneccion = new DB.coneccion();
         }
@@ -41,13 +46,19 @@ namespace uwpIntentoNuevo.view
 
         public void NavigationHome(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(MainPage));
+            if (stateEnsayoCFP != state.State.inProcess && stateEnsayoPAT != state.State.inProcess)
+            {
+                Ensayar.CloseBt();
+                frame.Navigate(typeof(MainPage));
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.BlueViolet);
             ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.BlueViolet);
+            stateEnsayoCFP = state.State.inProcess;
+            stateEnsayoPAT = state.State.inProcess;
 
             Random rnd = new Random();
             int VerificationKey = rnd.Next(1, 100000);
@@ -55,6 +66,7 @@ namespace uwpIntentoNuevo.view
 
             bool isFugaChecked = (bool)FugaChecked.IsChecked;
             bool isPuestaChecked = (bool)PuestaChecked.IsChecked;
+
             if (isFugaChecked && isPuestaChecked)
             {
                 ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Yellow);
@@ -91,7 +103,8 @@ namespace uwpIntentoNuevo.view
             else
                 ContentFuga.Background = new SolidColorBrush(Windows.UI.Colors.Red);
 
-            CreateEnsayoAndSend("PAT", pass.ToString(), DateTime.Today, float.Parse(value), VerificationKey.ToString());
+            stateEnsayoPAT = state.State.succes;
+            CreateEnsayoAndSend("PAT", pass.ToString(), float.Parse(value, CultureInfo.InvariantCulture.NumberFormat), VerificationKey.ToString());
 
         }
         private async void ManageDatosFuga(int VerificationKey, bool dato)
@@ -117,15 +130,15 @@ namespace uwpIntentoNuevo.view
             else
                 ContentPuesta.Background = new SolidColorBrush(Windows.UI.Colors.Red);
 
-            CreateEnsayoAndSend("CFP", pass.ToString(), DateTime.Today, float.Parse(value), VerificationKey.ToString());
+            stateEnsayoCFP = state.State.succes;
+            CreateEnsayoAndSend("CFP", pass.ToString(), float.Parse(value, CultureInfo.InvariantCulture.NumberFormat), VerificationKey.ToString());
 
         }
 
-        private void CreateEnsayoAndSend(string nombreEnsayo, string state, DateTime dateTime, float value, string VerificationKey)
+        private void CreateEnsayoAndSend(string nombreEnsayo, string state, float value, string VerificationKey)
         {
-            EnsayoDbModel data = new EnsayoDbModel(nombreEnsayo, value, state, dateTime, VerificationKey);
+            EnsayoDbModel data = new EnsayoDbModel(nombreEnsayo, value, state, DateTime.Today.Date, VerificationKey);
             coneccion.sendData(data);
-
         }
         private bool IsPassed(string stringToVerificate)
         {

@@ -95,7 +95,7 @@ namespace uwpIntentoNuevo.BT
         /// Direccion para conectarse al dispositivo bluetooth
         /// </param>
         /// <returns></returns>
-        public state.State Connect()
+        private state.State Connect()
         {
             bluetoothClient = new BluetoothClient();
 
@@ -109,6 +109,10 @@ namespace uwpIntentoNuevo.BT
             return state.State.succes;
         }
 
+        public void Close()
+        {
+            bluetoothClient.Close();
+        }
         /// <summary>
         /// Mandar datos a travez del bluetooth
         /// </summary>

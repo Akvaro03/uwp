@@ -29,28 +29,28 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="Nombre de la empresa"
-                       Grid.Column="1"
-                       Foreground="#fff"
-                       FontSize="18"
-                       HorizontalAlignment="Left" Margin="12,274,0,-298" Grid.Row="2"
-                       />
+                               Grid.Column="1"
+                               Foreground="#fff"
+                               FontSize="18"
+                               HorizontalAlignment="Left" Margin="12,274,0,-298" Grid.Row="2"
+                               />
                     <TextBox  Grid.Column="1"
-                       Margin="12,298,285,-335"
-                       PlaceholderText="Nombre de su empresa"
-                       Grid.Row="2"
-                       FontSize="18"
-                       Grid.ColumnSpan="4"
-                       Text="{Binding ClientName}"></TextBox >
+                             Margin="12,298,285,-335"
+                             PlaceholderText="Nombre de su empresa"
+                             Grid.Row="2"
+                             FontSize="18"
+                             Grid.ColumnSpan="4"
+                             Text="hola"></TextBox >
 
                     <!--<ComboBox Name="cmbColors">
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
-                                    <TextBlock Text="{Binding Name}" />
-                                </StackPanel>
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
+                    <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                    <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                    </DataTemplate>
+                    </ComboBox.ItemTemplate>
                     </ComboBox>-->
 
 
@@ -72,36 +72,36 @@
                     </Grid.ColumnDefinitions>
 
                     <Button x:ConnectionId='3' Content="Volver al inicio"
-                        Background="#8979F2" Foreground="#fff"
-                        FontSize="16"
-                        Grid.Column="1"
-                        x:Name="btn1"
-                                              
-                        CornerRadius="5" Margin="0,551,0,0" VerticalAlignment="Top"
-                        />
-                    
+                            Background="#8979F2" Foreground="#fff"
+                            FontSize="16"
+                            Grid.Column="1"
+                            x:Name="btn1"
+                                                  
+                            CornerRadius="5" Margin="0,551,0,0" VerticalAlignment="Top"
+                            />
+
                     <Button Grid.Column="2"
-                        FontSize="16"
-                        Padding="0, 15"
-                        Content="Guardar"
-                        Foreground="#fff"
-                        Background="#04D976"
-                        CornerRadius="5"
-                        Command="{Binding SaveConfig}" Margin="0,532,0,0" VerticalAlignment="Top" Height="74" Width="293" HorizontalAlignment="Center"/>
+                            FontSize="16"
+                            Padding="0, 15"
+                            Content="Guardar"
+                            Foreground="#fff"
+                            Background="#04D976"
+                            CornerRadius="5"
+                            Command="{Binding SaveConfig}" Margin="0,532,0,0" VerticalAlignment="Top" Height="74" Width="293" HorizontalAlignment="Center"/>
                     <TextBlock Text="Configuracion"
-                   Foreground="#fff" FontSize="18"
-                Grid.ColumnSpan="5" Margin="0,84,-20,498"
-                />
+                               Foreground="#fff" FontSize="18"
+                               Grid.ColumnSpan="5" Margin="0,84,-20,498"
+                               />
                     <TextBlock x:ConnectionId='4' Text="Seleccionar tipo de ensayo"
-                       Grid.Column="1"
-                       Foreground="#fff"
-                       FontSize="18"
-                       HorizontalAlignment="Left" Margin="10,344,0,238"                                                 
-                       />
+                               Grid.Column="1"
+                               Foreground="#fff"
+                               FontSize="18"
+                               HorizontalAlignment="Left" Margin="10,344,0,238"                                                 
+                               />
 
                     <ComboBox x:ConnectionId='5' IsEditable="True" Grid.Column="1"
-                       Margin="10,373,0,0"
-                       FontSize="18" Height="60" Width="515"                                              Grid.ColumnSpan="2">
+                              Margin="10,373,0,0"
+                              FontSize="18" Height="60" Width="515"                                              Grid.ColumnSpan="2">
                         <ComboBoxItem Content="Tipo 1"/>
                         <ComboBoxItem Content="Tipo 2"/>
                         <ComboBoxItem Content="Tipo 3"/>
