@@ -30,17 +30,20 @@ namespace uwpIntentoNuevo.view
     {
         private readonly EnsayarClass Ensayar;
         DB.coneccion coneccion;
+
         state.State stateEnsayoCFP;
         state.State stateEnsayoPAT;
 
 
         public Ensayos()
         {
+
             this.InitializeComponent();
             stateEnsayoCFP = state.State.none;
             stateEnsayoPAT = state.State.none;
             Ensayar = new EnsayarClass();
             coneccion = new DB.coneccion();
+
         }
 
 
@@ -138,7 +141,8 @@ namespace uwpIntentoNuevo.view
         private void CreateEnsayoAndSend(string nombreEnsayo, string state, float value, string VerificationKey)
         {
             EnsayoDbModel data = new EnsayoDbModel(nombreEnsayo, value, state, DateTime.Today.Date, VerificationKey);
-            coneccion.sendData(data);
+            DB.ConecctionSqLite.addRecord(data);
+            //coneccion.sendData(data);
         }
         private bool IsPassed(string stringToVerificate)
         {

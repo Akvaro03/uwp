@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="BT\BtConnection.cs" />
     <Compile Include="DB\coneccion.cs" />
+    <Compile Include="DB\ConecctionSqLite.cs" />
     <Compile Include="Ensayar\EnsayarClass.cs" />
     <Compile Include="Ensayar\EnsayoDbModel.cs" />
     <Compile Include="Enums\DataToSend.cs" />
@@ -183,6 +184,9 @@
     <PackageReference Include="InTheHand.Net.Bluetooth">
       <Version>4.0.33.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite">
+      <Version>8.0.0-preview.1.23111.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
@@ -199,7 +203,11 @@
       <Version>5.0.0-preview.5.20278.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\Downloads\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

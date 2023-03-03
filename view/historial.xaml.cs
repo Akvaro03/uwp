@@ -39,7 +39,9 @@ namespace uwpIntentoNuevo.view
             this.NombreBuscador = "";
 
             coneccion = new DB.coneccion();
-            Collection<EnsayosDBModel> Data = coneccion.getData();
+            //Collection<EnsayosDBModel> Data = coneccion.getData();
+            Collection<EnsayosDBModel> Data = DB.ConecctionSqLite.GetRecords();
+
             Collection<GroupEnsayos> ordenEnsayos = OrderCollection(Data);
             ensayos = ordenEnsayos;
             this.DataContext = this;

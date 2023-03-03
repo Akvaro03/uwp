@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using uwpIntentoNuevo.DB;
 using uwpIntentoNuevo.view;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -23,13 +25,22 @@ namespace uwpIntentoNuevo
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        DB.ConecctionSqLite sqLite;
+
         public MainPage()
         {
             this.InitializeComponent();
+            sqLite = new DB.ConecctionSqLite();
         }
         private void NavigationButton1(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(typeof(Config));
+            //DB.ConecctionSqLite.addRecord("pasancosas11111@gmail.com", "Alvaro");
+            //DB.ConecctionSqLite.addRecord("pasancosas22222@gmail.com", "Alvaro");
+            //DB.ConecctionSqLite.addRecord("pasancosas33333@gmail.com", "Alvaro");
+
+            Collection<EnsayosDBModel> data = DB.ConecctionSqLite.GetRecords();
+
+            //frame.Navigate(typeof(Config));
         }
 
         private void NavigationButton2(object sender, RoutedEventArgs e)

@@ -19,36 +19,56 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>99DB3AAE1809089720DC55F57822890659CFA1F699F001892E005C7A5CF06A60</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.9.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>B162F1B14ADB2DDC37DD5D0EB312D3DBFC40618C1EE0172FE29FD00EC9A56E6F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>822edb87-be27-4994-b35e-eb2a72c8a8e5_1.0.0.0_x64__4bjjn4d1bp97j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>822edb87-be27-4994-b35e-eb2a72c8a8e5_4bjjn4d1bp97j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>822edb87-be27-4994-b35e-eb2a72c8a8e5</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Consultar SRL</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.9.0</RegisteredVersion>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:52.130</Modified>
+      <Modified>2023-03-03T14:35:18.373</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.exe">
       <PackagePath>entrypoint\uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-03-02T14:06:52.287</Modified>
+      <Modified>2023-03-03T14:35:15.846</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\inthehand.net.bluetooth\4.0.33.1\lib\uap10.0.16299\InTheHand.Net.Bluetooth.dll">
       <PackagePath>InTheHand.Net.Bluetooth.dll</PackagePath>
       <Modified>2022-12-30T11:08:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\microsoft.data.sqlite.core\8.0.0-preview.1.23111.4\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+      <Modified>2023-02-11T18:23:12.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\mysqlconnector\2.2.5\lib\netstandard2.0\MySqlConnector.dll">
       <PackagePath>MySqlConnector.dll</PackagePath>
       <Modified>2023-01-01T21:31:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2022-06-11T01:23:28.000</Modified>
+      <Modified>2022-06-10T22:23:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.4\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2023-01-10T20:21:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\sqlitepclraw.core\2.1.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2023-01-10T20:18:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.4\runtimes\win10-x64\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2023-01-10T20:13:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.4\lib\netstandard2.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2023-01-10T20:18:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\.nuget\packages\syncfusion.licensing\20.4.0.44\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
@@ -128,65 +148,65 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2023-03-02T14:06:51.027</Modified>
+      <Modified>2023-02-16T13:20:58.399</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-03-02T14:06:51.015</Modified>
+      <Modified>2023-02-16T13:20:58.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.016</Modified>
+      <Modified>2023-02-16T13:20:58.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.016</Modified>
+      <Modified>2023-02-16T13:20:58.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.016</Modified>
+      <Modified>2023-02-16T13:20:58.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.016</Modified>
+      <Modified>2023-02-16T13:20:58.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.016</Modified>
+      <Modified>2023-02-16T13:20:58.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-02T14:06:51.020</Modified>
+      <Modified>2023-02-16T13:20:58.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\uwpIntentoNuevo.xr.xml">
       <PackagePath>uwpIntentoNuevo.xr.xml</PackagePath>
-      <Modified>2023-03-02T14:06:52.296</Modified>
+      <Modified>2023-03-02T13:26:43.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-03-02T14:06:51.837</Modified>
+      <Modified>2023-03-03T14:35:15.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-03-02T14:06:52.134</Modified>
+      <Modified>2023-03-03T14:35:15.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Config.xbf">
       <PackagePath>view\Config.xbf</PackagePath>
-      <Modified>2023-03-02T14:06:52.805</Modified>
+      <Modified>2023-03-03T14:35:15.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\Ensayos.xbf">
       <PackagePath>view\Ensayos.xbf</PackagePath>
-      <Modified>2023-03-02T14:06:52.806</Modified>
+      <Modified>2023-03-03T14:35:15.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\view\historial.xbf">
       <PackagePath>view\historial.xbf</PackagePath>
-      <Modified>2023-03-02T14:06:52.807</Modified>
+      <Modified>2023-03-03T14:35:15.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -202,11 +222,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-02T14:06:52.287</Modified>
+      <Modified>2023-03-03T13:04:57.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usuario\Documents\GitHub\uwp\bin\x64\Debug\Core\uwpIntentoNuevo.exe">
       <PackagePath>uwpIntentoNuevo.exe</PackagePath>
-      <Modified>2023-03-02T14:06:52.134</Modified>
+      <Modified>2023-03-03T14:35:18.355</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -255,57 +275,57 @@
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Usuario\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Usuario\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

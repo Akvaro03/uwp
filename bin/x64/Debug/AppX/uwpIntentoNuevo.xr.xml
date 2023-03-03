@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="ClientName" />
     <RootPropertyPathName Name="SaveConfig" />
-    <RootPropertyPathName Name="IsPATChecked" />
-    <RootPropertyPathName Name="IsFugaChecked" />
-    <RootPropertyPathName Name="ValorEnsayo" />
-    <RootPropertyPathName Name="NombreEnsayo" />
-    <RootPropertyPathName Name="id" />
-    <RootPropertyPathName Name="EstadoEnsayo" />
+    <RootPropertyPathName Name="valueCfp" />
+    <RootPropertyPathName Name="stateCfp" />
+    <RootPropertyPathName Name="valuePat" />
+    <RootPropertyPathName Name="statePat" />
     <RootPropertyPathName Name="FechaEnsayo" />
     <RootPropertyPathName Name="NombreBuscador" />
   </Roots.PropertyPathNames>
@@ -32,8 +29,10 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Background" />
+      <RootProperty Name="ColumnSpacing" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetColumnSpan" />
@@ -75,15 +74,10 @@
       <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="FallbackValue" />
-    </RootType>
     <RootType FullName="uwpIntentoNuevo.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -101,6 +95,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="PlaceholderText" />
@@ -110,9 +105,8 @@
     <RootType FullName="uwpIntentoNuevo.view.Config" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="uwpIntentoNuevo.view.Ensayos" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -120,10 +114,19 @@
       <RootProperty Name="Height" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="Header" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
